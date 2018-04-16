@@ -1,0 +1,808 @@
+/* ------------------------------------------------------------------------------- */
+/*   Max width 1024px
+/* ------------------------------------------------------------------------------- */
+
+
+@media (max-width: 1024px){
+  .content-text-home{
+    margin-top: 10rem !important;
+  }
+  h5{
+    font-size: 1rem;
+  }
+  .content-white{
+    padding: 10px;
+  }
+  .margin-special{
+  margin-bottom: 0px;
+  }
+  .conteiner-dash-info {
+    padding: 40px 0px;
+  }
+  .content-dash-white{
+    margin-bottom: 20px;
+  }
+  .text-secundary{
+    display: none;
+  }
+  .img-app{
+    width: 92.5%;
+  }
+  .m-l-60{
+    margin-right: 10px;
+  }
+  .img-icon-app{
+    width: 100%;
+  }
+  .project-box-inner{
+    padding: 1rem 1rem;
+  }
+  .img-enterprice{
+    width: 30%;
+  }
+  .text-secundary{
+    display: none;
+  }
+  .content-rec{
+    left: 12% ;
+  }
+  
+}
+
+/* ------------------------------------------------------------------------------- */
+/*   Max width 1199px
+/* ------------------------------------------------------------------------------- */
+
+
+@media (max-width: 1199px){
+
+  .content-log{
+    left: 8% ;
+  }
+  .bg-login-white{
+    margin-bottom: 20px !important;
+  }
+  .bg-login-blue-3{
+    padding: .7rem 1rem .5rem 1rem;
+
+  }
+
+}
+
+/* ------------------------------------------------------------------------------- */
+/*   Max width 991px
+/* ------------------------------------------------------------------------------- */
+
+
+@media (max-width: 991px){
+  h2.aseguradoras{
+    margin-top: 20%;
+  }
+  h5{
+    font-size: 2.5rem;
+    margin-top: 10px !important;
+  }
+  .content-img{
+    padding: 15% 10% 10% 10%;
+    text-align: center;
+  }
+  .content-img-blue{
+    padding: 5% 10% 10% 10%;
+    text-align: center;
+  }
+  .tabla-responsiva{
+    max-height: 100%;
+  }
+  .section-bg-blue{
+    height: 270px;
+  }
+
+  .content-log{
+    left: 0% ;
+  }
+  .bg-login-white{
+    margin-bottom: 0px !important;
+    max-width: 480px;
+    width: 100%
+
+  }
+  .bg-login-blue{
+    min-height: 370px;
+  }
+  .bg-login-blue-2{
+    min-height: 499px;
+  }
+  .bg-login-blue-3{
+    padding: 2rem 1rem 1rem 1rem;
+
+  }
+  .bg-cotizar{
+    max-width: 100%;
+    margin-bottom: 80px;
+  }
+  .brand{
+    margin-left: 5%;
+  }
+  .boxed{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .display-2{
+    font-size: 2.5rem;
+  }
+  .margin-sm{
+    margin-top: 40px;
+  }
+  .img-app{
+    width: 100%;
+  }
+  .m-l-60{
+    margin-right: 30px;
+  }
+  .content-text-home{
+    margin-top: 8rem !important;
+  }
+  .subtitle-top{
+    margin-bottom: 1rem !important
+  }
+  .display-2{
+    margin-bottom: 1px;
+  }
+  .img-enterprice{
+    width: 40%;
+  }
+  .btn-black{
+    margin-bottom: 80px;
+  }
+  .margin-xs{
+    margin-bottom: 30px;
+  }
+  .btn-bottom {
+    position: relative;
+    bottom: 0;
+    padding: 0%;
+    right: 0px;
+    margin-right: 0%;
+  }
+  .btn-calendar{
+    height: 47px;
+  }
+  .menu{
+    width: 50%;
+  }
+  .min-width-xs{
+    min-width: 100px;
+  }
+  .navbar-2 .social-list{
+    margin-left: 0px;
+    margin-top: -1%;
+  }
+  .navbar .social-list{
+    margin-right: 0%;
+  }
+  .section-bg{
+    height: auto;
+  }
+  .navbar-toggle-home{
+    right: 0%;
+    margin-top: 20px;
+  }
+  .register-background{
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+    height: 100%;
+  }
+  .login-background{
+    height: 100%;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  .password-background{
+    height: 100%;
+    padding-top: 1.2rem;
+    padding-bottom: 4rem;
+  }
+  .copy-bottom-password{
+    bottom: -10%;
+  }
+  .content-rec{
+    left: 0% ;
+  }
+  .bg-login-blue-3 {
+    padding: .9rem 1rem .9rem 1rem;
+}
+
+}
+/* ------------------------------------------------------------------------------- */
+/*   Max width 768px
+/* ------------------------------------------------------------------------------- */
+
+
+@media (max-width: 768px){
+  .bg-cotizar{
+    max-width: 100% !important;
+  }
+  .content-text-home{
+    margin-top: 6rem !important;
+  }
+
+  .section-bg-cotizar{
+    height: 500px;
+  }
+  .section-bg-blue{
+    height: 250px;
+  }
+  .content-img{
+    padding: 15% 10% 10% 10%;
+    text-align: center;
+  }
+  .content-img-blue{
+    padding: 5% 1% 10% 1%;
+    text-align: center;
+  }
+  .tabla-responsiva{
+    max-height: 100%;
+  }
+  .menu{
+    width: 70%;
+  }
+  .conteiner-dash-info {
+    padding: 40px 10px 0px 0px;
+  }
+  .navbar-toggle{
+    right: 2%;
+  }
+  .content-dash-white-2{
+    margin-bottom: 40px;
+    padding: 20px 0px;
+  }
+  .margin-special{
+    margin-bottom: 20px;
+  }
+  .content-text-page2{
+    margin-top: 60px;
+    padding: 0px 80px;
+    margin-bottom: 100px;
+  }
+  .img-enterprice{
+    width: 40%;
+  }
+  .navbar-2 .social-list{
+    margin-left: 0px;
+    margin-top: -4%;
+  }
+  .content-center-xs-home{
+    text-align: center;
+  }
+  .img-enterprice{
+    width: 20%;
+  }
+  .register-background{
+    height: 100vh;
+    padding-bottom: 7rem;
+    padding-top: 7rem;
+  }
+  .login-background{
+    height: 100vh;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .password-background{
+    height: 100vh;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+  .copy-bottom-password{
+    bottom: 4%;
+  }
+  
+}
+/* ------------------------------------------------------------------------------- */
+/*   Max width 767px
+/* ------------------------------------------------------------------------------- */
+
+
+@media (max-width: 767px){
+  .bg-login-white{
+    max-width: 100%;
+  }
+  .img-access{
+    width: 15%;
+  }
+  .bg-login-blue{
+    display: none;
+  }
+  .bg-login-blue-2{
+    display: none;
+  }
+  .bg-login-blue-3{
+    display: none;
+  }
+
+  .pp-scrollable .vertical-centred{
+    padding-top: 2rem; 
+  }
+  .img-perfil-dash{
+    width: 60px;
+    margin-right: 10px;
+  }
+  .icon-content-perfil {
+    right: 4%;
+    top: 5%;
+  }
+
+
+}
+/* ------------------------------------------------------------------------------- */
+/*   Max width 670px
+/* ------------------------------------------------------------------------------- */
+
+
+@media (max-width: 670px){
+  .bg-login-white{
+    max-width: 100%;
+  }
+  .content-white{
+    padding: 10px;
+  }
+  .section-bg-cotizar{
+    height: 250px;
+  }
+  .section-bg-blue{
+    height: 300px;
+  }
+  h5{
+    font-size: 2rem;
+    margin-top: 15px !important;
+  }
+  .btn-calendar{
+    height: 43px;
+  }
+  .img-perfil{
+    float: none;
+    width: 25%;
+    margin-right: 0px;
+  }
+  .content-center-xs{
+    text-align: center;
+  }
+  .container .dash{
+    padding-right: 5px !important;
+  }
+  .text-right-content{
+    text-align: center !important;
+  }
+  .section-bg-dash{
+    height: 400px;
+  }
+  .navbar-toggle-home{
+    margin-top: 0px;
+  }
+  .register-background{
+    height: 100%;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+  }
+  .login-background{
+    height: 100%;
+    padding-bottom: 1.2rem;
+    padding-top: 1.2rem;
+  }
+  .password-background{
+    height: 100%;
+    padding-bottom: 5rem;
+    padding-top: 1.2rem;
+  }
+  .copy-bottom{
+    bottom: -50%;
+  }
+  .copy-bottom-register{
+    bottom: -120%;
+  }
+  .copy-bottom-password{
+    bottom: -10%;
+  }
+
+}
+
+/* ------------------------------------------------------------------------------- */
+/*   Max width 480px
+/* ------------------------------------------------------------------------------- */
+
+
+@media (max-width: 480px){
+  .section-bg-blue{
+    height: 250px;
+  }
+  .btn-calendar{
+    height: 43px;
+  }
+  .menu{
+    width: 100%;
+  }
+  .img-content-perfil{
+    right: 10%;
+  }
+  .img-perfil-dash{
+    width: 50px;
+  }
+  .icon-content-perfil {
+    right: 8%;
+    top: 5%;
+  }
+  .section-bg-dash{
+    height: 330px;
+  }
+  .brand{
+    margin-left: 3%;
+  }
+  .m-t-n100{
+    margin-top: 0px;
+  }
+  .m-t-n10{
+    margin-top: 20%;
+  }
+  .img-enterprice{
+    display: none;
+  }
+  .register-background{
+    height: 100%;
+  }
+  .login-background{
+    height: 100%;
+  }
+  .password-background{
+    height: 100%;
+  }
+  .copy-bottom{
+    bottom: -15%;
+  }
+  .copy-bottom-register{
+    bottom: -15%;
+  }
+  .copy-bottom-password{
+    bottom: 4%;
+  }
+
+
+}
+/* ------------------------------------------------------------------------------- */
+/*   Max width 415px
+/* ------------------------------------------------------------------------------- */
+
+@media (max-width: 415px){
+  .register-background{
+    height: 100vh;
+  }
+  .login-background{
+    height: 100vh;
+  }
+  .password-background{
+    height: 100vh;
+  }
+  .copy-bottom{
+    bottom: 2%;
+  }
+  .copy-bottom-register{
+    bottom: -10%;
+  }
+}
+/* ------------------------------------------------------------------------------- */
+/*   Max width 380px
+/* ------------------------------------------------------------------------------- */
+
+@media (max-width: 380px){
+  .register-background{
+    height: 100vh;
+  }
+  .login-background{
+    height: 100vh;
+  }
+  .password-background{
+    height: 100vh;
+  }
+  .copy-bottom{
+    bottom: 5%;
+    padding-top: 2rem;
+  }
+  .copy-register{
+    bottom: 5%;
+    padding-top: 2rem;
+  }
+  .copy-bottom-register{
+    bottom: 2%;
+  }
+}
+/* ------------------------------------------------------------------------------- */
+/*   Max width 360px
+/* ------------------------------------------------------------------------------- */
+
+@media (max-width: 360px){
+  .register-background{
+    height: 100%;
+  }
+  .password-background{
+    height: 100vh;
+  }
+  .login-background{
+    height: 100vh;
+    padding-top: 4rem;
+  }
+}
+/* ------------------------------------------------------------------------------- */
+/*   Max width 320px
+/* ------------------------------------------------------------------------------- */
+
+
+@media (max-width: 320px){
+  .bg-login-white{
+    padding: .5rem 2rem;
+  }
+  .conteiner-dash-info{
+    padding: 40px 0px;
+  }
+  .register-background{
+    height: 100%;
+  }
+  .password-background{
+    height: 100vh;
+  }
+  .login-background{
+    height: 100vh;
+    padding-top: 2rem;
+  }
+  .copy-bottom-register{
+    bottom: -30%;;
+  }
+}
+/* ------------------------------------------------------------------------------- */
+/*    Min width 530px ----- Max width 570px
+/* ------------------------------------------------------------------------------- */
+
+@media (min-width: 530px) and (max-width: 570px){
+  .copy-bottom-password{
+    bottom: -25%;
+  }
+}
+/* ------------------------------------------------------------------------------- */
+/*    Min width 411px ----- Max width 414px
+/* ------------------------------------------------------------------------------- */
+
+@media (min-width: 411px) and (max-width: 414px){
+  .copy-bottom-register{
+    bottom: 2%;
+  }
+}
+/* ------------------------------------------------------------------------------- */
+/*   Min width 645px ----- Max width 667px
+/* ------------------------------------------------------------------------------- */
+@media (min-width: 641px) and (max-width: 667px){
+  .copy-bottom{
+    bottom: -30%;;
+  }
+  .copy-bottom-register{
+    bottom: -85%;;
+  }
+}
+/* ------------------------------------------------------------------------------- */
+/*   Min width 600px ----- Max width 640px
+/* ------------------------------------------------------------------------------- */
+@media (min-width: 600px) and (max-width: 640px){
+  .copy-bottom{
+    bottom: -35%;;
+  }
+  .copy-bottom-register{
+    bottom: -95%;;
+  }
+}
+/* ------------------------------------------------------------------------------- */
+/*   Min width 820px ----- Max width 823px
+/* ------------------------------------------------------------------------------- */
+@media (min-width: 820px) and (max-width: 823px){
+  .copy-bottom{
+    bottom: -25%;
+  }
+  .copy-bottom-register{
+    bottom: -55%;
+  }
+  .password-background{
+    height: 100%;
+  }
+  .copy-bottom-password{
+    bottom: 0%;
+  }
+}
+/* ------------------------------------------------------------------------------- */
+/*   Min width 800px ----- Max width 815px
+/* ------------------------------------------------------------------------------- */
+@media (min-width: 800px) and (max-width: 815px){
+  .copy-bottom{
+    bottom: -35%;
+  }
+  .copy-bottom-register{
+    bottom: -70%;
+  }
+}
+/* ------------------------------------------------------------------------------- */
+/*   Min width 824px ----- Max width 860px
+/* ------------------------------------------------------------------------------- */
+@media (min-width: 824px) and (max-width: 860px){
+  .copy-bottom{
+    bottom: -35%;;
+  }
+  .copy-register{
+    bottom: -35%;;
+  }
+  .password-background{
+    height: 100%;
+  }
+}
+
+/* ------------------------------------------------------------------------------- */
+/*   Min width 720px ----- Max width 760px
+/* ------------------------------------------------------------------------------- */
+@media (min-width: 720px) and (max-width: 760px){
+  .register-background{
+    height: 100%;
+    padding-top: 1.2rem;
+    padding-bottom: 4rem;
+  }
+  .login-background{
+    height: 100%;
+    padding-top: 1.2rem;
+    padding-bottom: 4rem;
+  }
+  .password-background{
+    height: 100%;
+    padding-top: 1.2rem;
+  }
+  .copy-bottom{
+    bottom: -15%;;
+  }
+  .copy-bottom-register{
+    bottom: -70%;;
+  }
+}
+
+/* ------------------------------------------------------------------------------- */
+/*   Min width 768px
+/* ------------------------------------------------------------------------------- */
+
+@media (min-width: 768px){
+
+  html{
+    font-size: 13px;
+  }
+
+  .pull-sm-left{
+    float: left;
+  }
+
+  .pull-sm-right{
+    float: right;
+  }
+
+  .boxed{
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+  }
+
+  .boxed-inner{
+    padding-left: 0;
+  }
+
+  .right-boxed{
+    right: 3rem;
+  }
+
+  .left-boxed{
+    left: 3rem;
+  }
+
+  .section-about{
+    padding-top: 12rem;
+  }
+
+  .project-box{
+    padding-bottom: 75%;
+  }
+
+  .row-contact-info{
+    margin-top: -2rem;
+  }
+
+  .col-contact-info{
+    padding-top: 4rem;
+    margin-top: 2rem;
+  }
+
+  .footer-flex .flex-item{
+    -webkit-flex: 0 0 33.3333%;
+    -ms-flex: 0 0 33.3333%;
+    flex: 0 0 33.3333%;
+  }
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+/*   Min width 992px
+/* ------------------------------------------------------------------------------- */
+
+
+
+@media (min-width: 992px){
+
+  html{
+    font-size: 14px;
+  }
+  .brand{
+    margin-left: 4%;
+  }
+
+  .boxed{
+    padding-left: 0rem;
+    padding-right: 0rem;
+  } 
+
+  .right-boxed{
+    right:4.2857rem;
+  }
+
+  .left-boxed{
+    left: 4.2857rem;
+  }
+
+
+  .boxed-inner .boxed{
+    padding-left: 0rem;
+  }
+
+
+  .col-contact-info{
+    border-top: 0;
+    padding-top: 0;
+  }
+
+  .row-contact-info{
+    margin-top: -5rem;
+  }
+
+  .col-contact-info{
+    margin-top: 5rem;
+  }
+
+  .col-contact-info:nth-child(2n){
+    border-left: 1px solid #3c3c3c;
+  }
+
+}
+
+/* ------------------------------------------------------------------------------- */
+/*   Min width 1200px
+/* ------------------------------------------------------------------------------- */
+
+
+@media (min-width: 1200px){
+
+
+  .col-contact-info{
+    border-left: 1px solid #3c3c3c;
+  }
+
+
+  .footer-flex .flex-item{
+    -webkit-box-flex: none;
+    -webkit-flex: none;
+    -ms-flex: none;
+    flex: none;
+  }
+}
+
+
+
+
+
+
+
+

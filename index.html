@@ -1,0 +1,413 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+
+<title>ISS</title> 
+
+<!-- Styles -->
+<link href="css/style.css" rel="stylesheet" media="screen">
+<link href="css/icons.css" rel="stylesheet" media="screen" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" media="screen" type="text/css">
+</head>
+<body class="body-full-page">
+
+  <!-- Menu-->
+
+    <div class="menu"> 
+      <span class="close-menu right-boxed"><i class="fa fa-times-circle"></i></span>
+      <div class="menu-lang right-boxed">
+        <a href="" class="active">ESP</a>
+        <a href="">ENG</a>
+      </div>
+      <ul class="menu-list right-boxed">
+        <li><a href="#page1">COTIZADOR</a></li>
+        <li><a href="#page2">NUESTRA APP</a></li>
+        <li><a href="#page3">ASEGURADORAS</a></li>
+        <li><a href="#page4">CONTACTO</a></li>
+        <li>
+          <div class="col-lg-12 text-center padding-btn-menu">
+            <a href="login.html"><button class="btn btn-cotizar">INGRESAR</button></a>
+          </div>
+        </li>
+      </ul>
+      <div class="menu-footer right-boxed">
+        <div class="copy">© ISS 2018. Todos los Derechos Reservados<br> Desarrollado por ITS Solutions</div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+
+    <header class="navbar navbar-2 navbar-white boxed">
+      <div class="navbar-bg"></div>
+      <a class="brand" href="#page1">
+        <img class="brand-img" alt="Logo" src="images/logo_home.png">
+      </a>
+
+      <div class="social-list hidden-sm hidden-xs">
+        <a href="#page1" class="list-menu active">Cotizador</a>
+        <a href="#page2" class="list-menu">Nuestra app</a>
+        <a href="#page3" class="list-menu">Aseguradoras</a>
+        <a href="#page4" class="list-menu">Contacto</a>
+        <a href=""><button class="btn">INGRESAR</button></a>
+      </div>
+
+      <div class="social-list hidden-lg">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+        <i class="fa fa-bars-home icon-menu"></i>
+      </button>
+      </div>
+
+
+    </header>
+    <div class="copy-bottom white boxed">© ISS 2018.</div>
+    <div class="pagepiling">
+      <div data-anchor="page1" class="pp-scrollable text-white section section-1">
+        <div class="section-bg">
+          <div class=" hidden-xs hidden-sm"></div>
+          <div class="scrollable-content">
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="vertical-title hidden-xs hidden-sm hidden-md"><span>BIENVENIDA</span></div>
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <div class="col-md-6 col-lg-7 content-text-home">
+                            <p class="subtitle-top">Bienvenido a ISS<br class="hidden-sm">comparador de seguros</p>
+                            <h1 class="display-2 text-white"><span class="text-primary">ASEGURA</span> TU AUTO Y VIAJA TRANQUILO.</h1>
+                            <div class="hr-bottom hidden-sm hidden-xs"></div>
+                          </div>
+                          <div class="col-md-6 col-lg-5 bg-cotizar">
+                            <h4 class="text-center">Cotiza y Compara</h4>
+                            <form class="js-form" novalidate="novalidate">
+                              <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <label>Correo Electrónico:</label>
+                                <input type="text" class="inp-cotizar" aria-required="true">
+                              </div>
+
+                              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <label>Uso de Vehículo:</label>
+                                <select class="inp-cotizar">
+                                  <option value="">Seleccione uno:</option>
+                                  <option value="opcion-1">Opción 1</option>
+                                  <option value="opcion-2">Opción 2</option>
+                                  <option value="opcion-n">Opción N</option>
+                                </select>
+                              </div>
+
+                              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <label>Tipo de Vehículo:</label>
+                                <select class="inp-cotizar" aria-required="true">
+                                  <option value="">Seleccione uno:</option>
+                                  <option value="opcion-1">Opción 1</option>
+                                  <option value="opcion-2">Opción 2</option>
+                                  <option value="opcion-n">Opción N</option>
+                                </select>
+                              </div>
+
+                              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <label>Marca:</label>
+                                <select class="inp-cotizar" aria-required="true">
+                                  <option value="">Seleccione uno:</option>
+                                  <option value="opcion-1">Opción 1</option>
+                                  <option value="opcion-2">Opción 2</option>
+                                  <option value="opcion-n">Opción N</option>
+                                </select>
+                              </div>
+
+                              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <label>SubMarca:</label>
+                                <select class="inp-cotizar" aria-required="true">
+                                  <option value="">Seleccione uno:</option>
+                                  <option value="opcion-1">Opción 1</option>
+                                  <option value="opcion-2">Opción 2</option>
+                                  <option value="opcion-n">Opción N</option>
+                                </select>
+                              </div>
+
+                              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <label>Modelo:</label>
+                                <select class="inp-cotizar" aria-required="true">
+                                  <option value="">Seleccione uno:</option>
+                                  <option value="opcion-1">Opción 1</option>
+                                  <option value="opcion-2">Opción 2</option>
+                                  <option value="opcion-n">Opción N</option>
+                                </select>
+                              </div>
+
+                              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                <label>CP:</label>
+                                <input type="text" class="inp-cotizar" aria-required="true">
+                              </div>
+
+                              <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12">
+                                <label>Versión:</label>
+                                <select class="inp-cotizar" aria-required="true">
+                                  <option value="">Seleccione uno:</option>
+                                  <option value="opcion-1">Opción 1</option>
+                                  <option value="opcion-2">Opción 2</option>
+                                  <option value="opcion-n">Opción N</option>
+                                </select>
+                                
+                              </div>
+
+                              <div class="col-md-12 col-lg-12 text-center">
+                                <a href=""><button class="btn-cotizar" data-toggle="modal" data-target="#modal-captcha">COTIZAR AHORA</button></a>
+                                <a href="#" class="link-privacity">Aviso de Privacidad</a>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="page2" class="pp-scrollable section section-2">
+        <div class="scroll-wrap">
+          <div class="scrollable-content">
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="vertical-title text-secundary hidden-xs hidden-sm"><span>NUESTRA APP</span></div>
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 m-l-60 m-t-10 margin-sm">
+                          <figure>
+                            <img src="images/app-iss.png" class="img-app" alt="App">
+                          </figure>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6 content-text-page2">
+                          <p class="subtitle-top text-white">Ya conoces nuestra App</p>
+                          <h1 class="display-2 text-white"><span class="text-primary">ASEGURA</span>, COMPARTE Y GANA CON CADA PÓLIZA EMITIDA.</h1>
+                          <p class="text-blue">Con nuestra nueva aplicación, podrás llevar todo el poder para asegurar tu auto de una manera fácil y sencilla, además, cada vez que compartas la app con tus amigos y familiares, podrás ganar dinero por cada póliza emitida. <p>
+
+                          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 p-l-0 content-center-xs-home"><a href=""><button class="btn-store"><figure><img src="images/app-ios.png" alt="icon-app" class="img-icon-app"></figure></button></a></div>
+                          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 p-l-0 content-center-xs-home"><a href=""><button class="btn-store"><figure><img src="images/app-android.png" alt="icon-app" class="img-icon-app"></figure></button></a></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-anchor="page3" class="pp-scrollable text-white section section-3 bg-enterprice">
+        <div class="scroll-wrap">
+          
+          <div class="scrollable-content">
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="vertical-title text-secundary hidden-xs hidden-sm"><span>ASEGURADORAS</span></div>
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro">
+                      <div class="row">
+                        <div class="col-md-12 m-t-n100">
+                          <h2 class="text-white aseguradoras">LAS ASEGURADORAS</h2>
+                          <div class="row-project-box row text-center">
+                            <div class="col-project-box col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                              <a href="" class="project-box">
+                                <div class="project-box-inner">
+                                  <h5>SEGUROS HDI</h5>
+                                  <div class="project-category text-white">La aseguradora de México.</div>
+                                  <figure><img src="images/aseguradoras/01.jpg" alt="HDI" class="img-enterprice"></figure>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="col-project-box col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                              <a href="" class="project-box">
+                                <div class="project-box-inner">
+                                  <h5>AXA</h5>
+                                  <div class="project-category text-white">La aseguradora de México.</div>
+                                  <figure><img src="images/aseguradoras/02.jpg" alt="AXA" class="img-enterprice"></figure>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="col-project-box col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                              <a href="" class="project-box">
+                                <div class="project-box-inner">
+                                  <h5>BANORTE</h5>
+                                  <div class="project-category text-white">La aseguradora de México.</div>
+                                  <figure><img src="images/aseguradoras/03.jpg" alt="BANORTE" class="img-enterprice"></figure>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="col-project-box col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                              <a href="" class="project-box">
+                                <div class="project-box-inner">
+                                  <h5>ABA</h5>
+                                  <div class="project-category text-white">La aseguradora de México.</div>
+                                  <figure><img src="images/aseguradoras/04.jpg" alt="ABA" class="img-enterprice"></figure>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="col-project-box col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                              <a href="" class="project-box">
+                                <div class="project-box-inner">
+                                  <h5>QUALITAS</h5>
+                                  <div class="project-category text-white">La aseguradora de México.</div>
+                                  <figure><img src="images/aseguradoras/05.jpg" alt="QUALITAS" class="img-enterprice"></figure>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="col-project-box col-xs-12 col-sm-6 col-md-3 col-lg-3">
+                              <a href="" class="project-box">
+                                <div class="project-box-inner">
+                                  <h5>ZURICH</h5>
+                                  <div class="project-category text-white">La aseguradora de México.</div>
+                                  <figure><img src="images/aseguradoras/06.jpg" alt="ZURICH" class="img-enterprice"></figure>
+                                </div>
+                              </a>
+                            </div>
+
+                            <div class="col-project-box col-xs-12 col-sm-6 col-md-3 col-lg-3 m-b-80">
+                              <a href="" class="project-box">
+                                <div class="project-box-inner">
+                                  <h5>SURA</h5>
+                                  <div class="project-category text-white">La aseguradora de México.</div>
+                                  <figure><img src="images/aseguradoras/07.jpg" alt="SURA" class="img-enterprice"></figure>
+                                </div>
+                              </a>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-anchor="page4" class="pp-scrollable section section-6 bg-contact">
+        <div class="scroll-wrap">
+          <div class="scrollable-content">
+            <div class="vertical-centred">
+              <div class="boxed boxed-inner">
+                <div class="vertical-title text-secundary hidden-xs hidden-sm"><span>CONTACTANOS</span></div>
+                <div class="boxed">
+                  <div class="container">
+                    <div class="intro overflow-hidden">
+                      <div class="row">
+                        <div class="col-md-12 m-t-n10">
+                          <h2>CONTACTANOS</h2>
+                          <div class="contact-info">
+                            <form class="js-form" novalidate="novalidate">
+                              <div class="row">
+                                <div class="form-group col-sm-6">
+                                  <input type="text" name="name" required="" placeholder="Nombre*" aria-required="true">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                  <input type="email" name="email" required="" placeholder="Correo Electrónico" aria-required="true">
+                                </div>
+                                <div class="form-group col-sm-12">
+                                  <input type="text" name="subject" placeholder="Motivo">
+                                </div>
+                                <div class="form-group col-sm-12">
+                                  <textarea name="message" required="" placeholder="Mensaje*" aria-required="true"></textarea>
+                                </div>
+                                <div class="col-sm-12 text-right"><button type="submit" class="btn-black">Enviar</button></div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Modal Captcha -->
+
+  <div id="modal-captcha" class="modal modal-message fade" role="dialog">
+  <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <a href="cotizacion.html"><span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span></a>
+            <figure class="text-center"><img src="images/modal/nocaptcha.gif"></figure>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal Success -->
+
+  <div id="success" class="modal modal-message fade" role="dialog">
+  <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+            <img src="images/modal/icon-correct.png" class="icon-modal">
+            <div class="p-t-m">
+              <p class="modal-subtitle">EL PROCESO SE COMPLETO</p>
+              <h2 class="modal-title">¡CORRECTAMENTE!</h2>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal Error -->
+
+  <div id="modal-error" class="modal modal-message fade" role="dialog">
+  <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+            <img src="images/modal/icon-correct.png" class="icon-modal">
+            <div class="p-t-m">
+              <h2 class="modal-title">¡OCURRIÓ UN ERROR!</h2>
+              <p class="modal-subtitle">INTENTE MÁS TARDE</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+<!-- jQuery -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.pagepiling.js"></script>
+
+
+
+<!-- Scripts -->
+<script src="js/menu.js"></script> 
+<script src="js/loader.js"></script> 
+<script src="js/pagepiling.js"></script>
+</body>
+</html>
