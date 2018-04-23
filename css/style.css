@@ -961,6 +961,7 @@ label.error{
           transition: all .3s ease-out!important;
 }
 .btn-black{
+  cursor: pointer;
   color:#FFF;
   letter-spacing: 0.025em;
   font-size: 1rem;
