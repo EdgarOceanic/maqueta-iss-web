@@ -256,7 +256,7 @@ a:focus{
 
 }
 .content-white{
-  padding: 40px;
+  padding: 20px 40px;
 
 }
 
@@ -415,12 +415,20 @@ a.text-link-login{
 }
 .content-menu-cotizar{
   padding: 20px;
+  position: absolute;
 }
 h3 a{
   color: #063d66;
 }
 h3 a:hover{
   text-decoration: none;
+}
+.line-white{
+  width: 100%;
+  border: 1px solid #FFF;
+}
+.circle-content{
+  float: right;
 }
 
 
@@ -2009,6 +2017,11 @@ a.active-profile{
   padding: 100px 20px 104px 20px;
   text-align: center;
 }
+.bg-modal-blue-input{
+  background-color: #3496e0;
+  padding: 100px 20px 93px 20px;
+  text-align: center;
+}
 .bg-modal-white{
   background-color: #fff;
   padding: 10px 20px 40px 20px;
@@ -2016,6 +2029,9 @@ a.active-profile{
 }
 .modal-dialog{
   width: 800px;
+}
+.modal-content-special{
+  margin: 10% 25%;
 }
 
 

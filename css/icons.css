@@ -192,6 +192,17 @@
 }
 .fa-star:before {
   content: "\f005";
+  color: #FCC33C;
+  font-size: 18px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.fa-star-2:before {
+  content: "\f005";
+  color: #FCC33C;
+  font-size: 24px;
+  margin: 0 5px;
+  cursor: pointer;
 }
 .fa-star-o:before {
   content: "\f006";
@@ -267,8 +278,11 @@
 }
 .fa-download:before {
   content: "\f019";
-  color: #FFFFFF;
-  margin-left: 10px;
+  color: #3496e0;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+
 }
 .fa-arrow-circle-o-down:before {
   content: "\f01a";
@@ -415,9 +429,11 @@
 .fa-edit:before,
 .fa-pencil-square-o:before {
   content: "\f044";
-  color: #3bb0c9;
+  color: #3496e0;
   font-size: 21px;
-  padding: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  vertical-align: middle;
 }
 .fa-share-square-o:before {
   content: "\f045";
@@ -471,13 +487,28 @@
   color: #3496e0;
   cursor: pointer;
 }
+.fa-plus-circle-2:before {
+  content: "\f055";
+  font-size: 26px;
+  color: #3496e0;
+  cursor: pointer;
+}
 .fa-minus-circle:before {
   content: "\f056";
 }
 .fa-times-circle:before {
   content: "\f057";
-  font-size: 24px;
+  font-size: 21px;
+  color: #FFF;
+  cursor: pointer;
   opacity: .5;
+}
+.fa-times-circle-td:before {
+  content: "\f057";
+  font-size: 18px;
+  color: red;
+  margin: 0 5px;
+  cursor: pointer;
 }
 .fa-check-circle:before {
   content: "\f058";
@@ -634,7 +665,7 @@
   content: "\f084";
   position: absolute;
   margin-top: -12px;
-  font-size: 16px;
+  font-size: 16px; 
   color: #fcc33c;
 }
 .fa-gears:before,
@@ -700,6 +731,10 @@
 }
 .fa-phone-square:before {
   content: "\f098";
+  color: #3496e0;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
 }
 .fa-twitter:before {
   content: "\f099";
@@ -803,6 +838,7 @@
   content: "\f0c5";
   color: #FFFFFF;
   margin-left: 10px;
+  font-size: 21px;
 }
 .fa-paperclip:before {
   content: "\f0c6";
@@ -865,6 +901,7 @@
 }
 .fa-caret-down:before {
   content: "\f0d7";
+
 }
 .fa-caret-up:before {
   content: "\f0d8";
@@ -1296,9 +1333,10 @@
 }
 .fa-file:before {
   content: "\f15b";
-  color: #3496e0;
+  color: #063d66;
   margin-right: 10px;
-  cursor: pointer;
+  cursor: pointer; 
+  font-size: 16px;
 }
 .fa-file-text:before {
   content: "\f15c";
@@ -1570,6 +1608,10 @@
 .fa-automobile:before,
 .fa-car:before {
   content: "\f1b9";
+  color: #3496e0;
+  font-size: 16px;
+  margin: 0 5px;
+  cursor: pointer;
 }
 .fa-cab:before,
 .fa-taxi:before {
