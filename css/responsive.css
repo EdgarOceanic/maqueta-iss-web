@@ -46,6 +46,9 @@
   .content-rec{
     left: 12% ;
   }
+  .img-access{
+    width: 10%;
+  }
   
 }
 
@@ -171,7 +174,7 @@
     width: 50%;
   }
   .min-width-xs{
-    min-width: 100px;
+    min-width: 200px;
   }
   .navbar-2 .social-list{
     margin-left: 0px;
@@ -799,7 +802,7 @@
   }
 }
 
-
+}
 
 
 
