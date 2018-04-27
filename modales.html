@@ -1,0 +1,427 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons -->
+<link rel="shortcut icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+
+<title>ISS</title> 
+
+<!-- Styles -->
+<link href="css/style.css" rel="stylesheet" media="screen">
+<link href="css/icons.css" rel="stylesheet" media="screen" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" media="screen" type="text/css">
+</head>
+<body class="overflow-y-lg">
+
+  <!-- Modal Success -->
+
+  <div id="modal-success" class="modal modal-message fade" role="dialog">
+ 	<div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+            <img src="images/modal/icon-correct.png" class="icon-modal">
+            <div class="p-t-m">
+            	<p class="modal-subtitle">EL PROCESO SE COMPLETO</p>
+            	<h2 class="modal-title">¡CORRECTAMENTE!</h2>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal Process -->
+
+  <div id="modal-process" class="modal modal-message fade" role="dialog">
+ 	<div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+            <img src="images/modal/icon-correct.png" class="icon-modal">
+            <div class="p-t-m">
+            	<p class="modal-subtitle">EL PROCESO SE COMPLETO</p>
+            	<h2 class="modal-title">¡CORRECTAMENTE!</h2>
+            	<p class="modal-subtitle">REVISA EL CALENDARIO</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal Fiscales -->
+
+  <div id="modal-fiscal" class="modal modal-message fade" role="dialog">
+ 	<div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+            <img src="images/modal/icon-correct.png" class="icon-modal">
+            <div class="p-t-m">
+            	<p class="modal-subtitle">LOS DATOS FISCALES SON</p>
+            	<h2 class="modal-title">DIFERENTES</h2>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal mail -->
+
+  <div id="modal-mail" class="modal modal-message fade" role="dialog">
+ 	<div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+            <img src="images/modal/icon-correct.png" class="icon-modal">
+            <div class="p-t-m">
+            	<p class="modal-subtitle">EL CORREO SE MANDO</p>
+            	<h2 class="modal-title">¡CORRECTAMENTE!</h2>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal Captcha -->
+
+  <div id="modal-captcha" class="modal modal-message fade" role="dialog">
+ 	<div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+            <figure class="text-center"><img src="images/modal/nocaptcha.gif"></figure>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal Cancelar poliza -->
+
+  <div id="modal-cancelar-poliza" class="modal modal-message fade" role="dialog">
+ 	<div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+            <img src="images/modal/icon-correct.png" class="icon-modal">
+            <div class="p-t-m">
+            	<p class="modal-subtitle">PARA CANCELAR LA PÓLIZA</p>
+            	<h2 class="modal-title">LLAMA AL 555555555</h2>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal Process Mail -->
+
+  <div id="modal-mail-process" class="modal modal-message fade" role="dialog">
+ 	<div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+            <img src="images/modal/icon-correct.png" class="icon-modal">
+            <div class="p-t-m">
+            	<p class="modal-subtitle">EN BREVE RECIBIRAS UN CORREO ELECTRÓNICO</p>
+            	<h2 class="modal-title">PROCESO COMPLETO</h2>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal Error -->
+
+  <div id="modal-error" class="modal modal-message fade" role="dialog">
+ 	<div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+            <img src="images/modal/icon-correct.png" class="icon-modal">
+            <div class="p-t-m">
+            	<h2 class="modal-title">¡OCURRIÓ UN ERROR!</h2>
+            	<p class="modal-subtitle">INTENTE MÁS TARDE</p>
+            </div>
+          </div>
+        </div>
+  </div>
+  </div>
+
+  <!-- Modal Coberturas -->
+
+  <div id="modal-coberturas" class="modal modal-message fade" role="dialog">
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-save">
+          <div class="col-lg-12 bg-modal-white">
+            <div class="col-lg-12">
+              <span class="close close-blue" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+              <p class="text-dark m-b-30">Listado de coberturas</p>
+                <div class="tabla-responsiva">
+                <table class="table table-striped table-bordered" cellspacing="0" border="0">
+                  <thead>
+                    <tr>
+                      <th>Aseguradoras</th>
+                      <th>RC Daños a terceros</th>
+                      <th>GM Ocupantes</th>
+                      <th>RC Exceso por muerte</th>
+                      <th>Asistencia Jurídica</th>
+                      <th>RC Familiar</th>
+                      <th>Asistencia Médica</th>
+                      <th>Asistencia de Viaje</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><img src="images/aseguradoras/01.jpg" class="img-enterprice-table"></td>
+                      <td class="text-table">$1,500,000</td>
+                      <td class="text-table">$80,000</td>
+                      <td class="text-table">$10,000</td>
+                      <td><i class="fa fa-check-circle"></i></td>
+                      <td><i class="fa fa-check-circle"></i></td>
+                      <td><i class="fa fa-check-circle"></i></td>
+                      <td><i class="fa fa-check-circle"></i></td>
+                    </tr>
+                  <tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <!-- Modal email -->
+
+  <div id="modal-share-email" class="modal modal-message fade" role="dialog">
+    <div class="modal-header modal-content-special">
+    	<span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+    	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left">
+            <label class="text-white">*Correo Electrónico:</label>
+            <input type="text" class="inp-cotizar">
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
+            <a href="#"><button class="btn">COMPARTIR</button></a>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal Save -->
+
+  <div id="modal-save" class="modal modal-message fade" role="dialog">
+ 	<div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-save">
+          	<div class="col-lg-4 bg-modal-blue">
+
+          		<figure>
+                    <img src="images/img-login.png" class="img-access">
+                </figure>
+                <h2 class="m-rl-0">GUARDAR COTIZACIÓN</h2>
+          	</div>
+
+          	<div class="col-lg-8 bg-modal-white">
+          		<div class="col-lg-12">
+          			<span class="close close-blue" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+          		</div>
+          		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <label class="text-label">*Nombre:</label>
+                    <input type="text" class="inp-cotizar">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <label class="text-label">*Correo Electrónico:</label>
+                    <input type="text" class="inp-cotizar">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <label class="text-label">*Contraseña:</label>
+                    <input type="text" class="inp-cotizar">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <label class="text-label">*Repetir Contraseña:</label>
+                    <input type="text" class="inp-cotizar">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <label class="text-label">*Nombre de Cotización:</label>
+                    <input type="text" class="inp-cotizar">
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
+                   <a href="#"><button class="btn">GUARDAR</button></a>
+                </div>
+              </div>
+          	</div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal referidos -->
+
+  <div id="modal-referidos" class="modal modal-message fade" role="dialog">
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-save">
+          <div class="col-lg-12 bg-modal-white">
+            <div class="col-lg-12">
+              <span class="close close-blue" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+              <p class="text-dark m-b-30">Listado de Referidos</p>
+                <div class="tabla-responsiva">
+                <table class="table table-striped table-bordered" cellspacing="0" border="0">
+                  <thead>
+                    <tr>
+                      <th>Aseguradoras</th>
+                      <th>RC Daños a terceros</th>
+                      <th>GM Ocupantes</th>
+                      <th>RC Exceso por muerte</th>
+                      <th>Asistencia Jurídica</th>
+                      <th>RC Familiar</th>
+                      <th>Asistencia Médica</th>
+                      <th>Asistencia de Viaje</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><img src="images/aseguradoras/01.jpg" class="img-enterprice-table"></td>
+                      <td class="text-table">$1,500,000</td>
+                      <td class="text-table">$80,000</td>
+                      <td class="text-table">$10,000</td>
+                      <td><i class="fa fa-check-circle"></i></td>
+                      <td><i class="fa fa-check-circle"></i></td>
+                      <td><i class="fa fa-check-circle"></i></td>
+                      <td><i class="fa fa-check-circle"></i></td>
+                    </tr>
+                  <tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <!-- Modal Cobrar-->
+
+  <div id="modal-cobrar" class="modal modal-message fade" role="dialog">
+ 	<div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-save">
+          	<div class="col-lg-4 bg-modal-blue-input">
+          		<figure>
+                    <img src="images/img-login.png" class="img-access">
+                </figure>
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-l-0 p-r-0">
+                	<div class="text-white text-left col-lg-8 p-l-0 p-r-0">Total a cobrar:</div>
+                	<div class="text-white-bold text-right col-lg-4 p-l-0 p-r-0">$1,500</div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-l-0 p-r-0">
+                	<div class="text-white text-left col-lg-8 p-l-0 p-r-0">Ret. ISR:</div>
+                	<div class="text-white-bold text-right col-lg-4 p-l-0 p-r-0">$150</div>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 line-white"></div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 p-l-0 p-r-0">
+                	<div class="text-white-bold text-left col-lg-8 p-l-0 p-r-0">Total:</div>
+                	<div class="text-white-bold text-right col-lg-4 p-l-0 p-r-0">$1,350</div>
+                </div>
+          	</div>
+
+          	<div class="col-lg-8 bg-modal-white">
+          		<div class="col-lg-12 text-right">
+          			<span><i class="fa fa-edit"></i></span>
+          			<span class="close close-blue" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+          		</div>
+          		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <label class="text-label">*RFC:<i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="3 ó 4 números detrás de la tarjeta" ></i></label>
+                    <input type="text" class="inp-cotizar">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <label class="text-label">*CURP: <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="3 ó 4 números detrás de la tarjeta" ></i></label>
+                    <input type="text" class="inp-cotizar">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <label class="text-label">*CLABE:</label>
+                    <input type="text" class="inp-cotizar">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <label class="text-label">*Banco:</label>
+                    <select class="inp-cotizar">
+                        <option value="">Seleccione uno:</option>
+                        <option value="opcion-1">Opción 1</option>
+                        <option value="opcion-2">Opción 2</option>
+                        <option value="opcion-n">Opción N</option>
+                    </select>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <label class="text-label">*Nombre del títular:</label>
+                    <input type="text" class="inp-cotizar">
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 m-b-20">
+                    <label class="text-label">*Mail:</label>
+                    <input type="text" class="inp-cotizar">
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
+                   <a href="#"><button class="btn">COBRAR</button></a>
+                </div>
+          	</div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal Compartir-->
+
+  <div id="modal-share" class="modal modal-message fade" role="dialog">
+  <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+            <img src="images/modal/icon-correct.png" class="icon-modal">
+            <div class="p-t-m">
+              <p class="modal-subtitle">EL PROCESO SE COMPLETO</p>
+              <h2 class="modal-title">¡CORRECTAMENTE!</h2>
+              <p class="m-b-30">Puedes compartir y ganar al momento</p>
+              <i class="fa fa-facebook-square"></i><i class="fa fa-envelope-2"></i>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+<!-- jQuery -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.pagepiling.js"></script>
+
+
+
+<!-- Scripts -->
+<script src="js/scripts.js"></script> 
+</body>
+</html>
