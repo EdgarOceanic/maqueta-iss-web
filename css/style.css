@@ -417,6 +417,11 @@ a.text-link-login{
   padding: 20px;
   position: absolute;
 }
+.content-menu-dash-cotizar{
+  padding: 20px;
+  z-index: 1000;
+}
+
 h3 a{
   color: #063d66;
 }
@@ -430,6 +435,38 @@ h3 a:hover{
 .circle-content{
   float: right;
 }
+.amarillo{
+  color: #000;
+  padding: 20px;
+  font-size: 16px;
+  background-color: yellow;
+}
+.rosa{
+  color: #FFF;
+  padding: 20px;
+  font-size: 16px;
+  background-color: hotpink;
+}
+.rojo{
+  color: #FFF;
+  padding: 20px;
+  font-size: 16px;
+  background-color: red;
+}
+.verde{
+  color: #FFF;
+  padding: 20px;
+  font-size: 16px;
+  background-color: green;
+}
+.azul{
+  color: #FFF;
+  padding: 20px;
+  font-size: 16px;
+  background-color: royalblue;
+}
+
+
 
 
 /* =============
@@ -608,7 +645,7 @@ td{
     overflow-x: auto; 
 }
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
-    border: 0px !important
+    border: 0px !important;
 }
 .table-striped>tbody>tr:nth-of-type(odd) {
     background-color: rgba(164,218,231,.3);
@@ -620,6 +657,10 @@ td{
 .size-table{
   max-width: 100px;
 }
+.table-border{
+  border: solid;
+}
+
 
 /* Margin */
 
@@ -961,7 +1002,6 @@ label.error{
           transition: all .3s ease-out!important;
 }
 .btn-black{
-  cursor: pointer;
   color:#FFF;
   letter-spacing: 0.025em;
   font-size: 1rem;
@@ -1130,6 +1170,13 @@ label.error{
 
 
 /* 1.7 Helpers */
+
+.text-general{
+  font-size: 12px;
+  color: #4d4d4d;
+  line-height: 21px;
+  text-align: left;
+}
 
 .text-date{
   color: #cccccc;
@@ -1892,6 +1939,11 @@ a.brand:focus{
 }
 .header-blue-3-dash{
   background-color: #063d66;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+}
+.header-blue-4-dash{
+  background-color: #ff931e;
   border-radius: 10px 10px 0px 0px;
   padding: 20px;
 }

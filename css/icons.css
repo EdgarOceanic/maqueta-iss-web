@@ -503,6 +503,13 @@
   cursor: pointer;
   opacity: .5;
 }
+.fa-times-circle-2:before {
+  content: "\f057";
+  font-size: 28px;
+  color: #3496e0;
+  cursor: pointer;
+  opacity: .8;
+}
 .fa-times-circle-td:before {
   content: "\f057";
   font-size: 18px;
