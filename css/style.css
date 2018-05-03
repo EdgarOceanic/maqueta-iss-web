@@ -465,10 +465,24 @@ h3 a:hover{
   font-size: 16px;
   background-color: royalblue;
 }
-
-
-
-
+.form-validation{
+  color: #c7254e;
+  font-size: 14px;
+  font-family: 'montserratmedium';
+  background-color: #f9f2f4;
+  padding: 20px;
+  max-width: 20%;
+  text-align: center;
+  position: absolute;
+  margin: 20px;
+  border-radius: 5px;
+  right: 0;
+  transition:All 1s ease;
+  -webkit-transition:All .5s ease;
+  -moz-transition:All .5s ease;
+  -o-transition:All .5s ease;
+  z-index: 1;
+}
 /* =============
    Checkbox
 ============= */
@@ -1731,7 +1745,7 @@ a.brand:focus{
   background: -ms-radial-gradient(center, ellipse cover, rgba(52,150,224,1) 0%, rgba(0,104,203,1) 100%) !important;
   background: radial-gradient(ellipse at center, rgba(52,150,224,1) 0%, rgba(0,104,203,1) 100%) !important;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3496e0', endColorstr='#0068cb', GradientType=1 );
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-bottom: 7rem;
   height: 100vh;
 }
