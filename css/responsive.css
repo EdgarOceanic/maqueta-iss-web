@@ -49,6 +49,9 @@
   .img-access{
     width: 10%;
   }
+  .img-access-recuperar{
+    width: 32%;
+  }
   
 }
 
@@ -297,6 +300,15 @@
   }
   .copy-bottom-password{
     bottom: 4%;
+  }
+  .form-validation{
+    max-width: 100%;
+    position: relative;
+    margin: 0;
+  }
+  .content-menu-cotizar{
+    padding: 20px 20px 0px 20px;
+    position: relative;
   }
   
 }

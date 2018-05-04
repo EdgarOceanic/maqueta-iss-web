@@ -197,9 +197,16 @@
   margin: 0 5px;
   cursor: pointer;
 }
-.fa-star-2:before {
+.fa-star-on:before {
   content: "\f005";
   color: #FCC33C;
+  font-size: 24px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.fa-star-off:before {
+  content: "\f005";
+  color: #cccccc;
   font-size: 24px;
   margin: 0 5px;
   cursor: pointer;
@@ -509,6 +516,7 @@
   color: #3496e0;
   cursor: pointer;
   opacity: .8;
+  position: relative;
 }
 .fa-times-circle-td:before {
   content: "\f057";
@@ -580,6 +588,8 @@
 }
 .fa-plus:before {
   content: "\f067";
+  color: #FFF;
+  cursor: pointer;
 }
 .fa-minus:before {
   content: "\f068";
@@ -617,6 +627,9 @@
 }
 .fa-calendar:before {
   content: "\f073";
+  font-size: 14px;
+  color: #FFF;
+
 }
 .fa-random:before {
   content: "\f074";
@@ -729,6 +742,14 @@
   color: #fcc33c;
   position: absolute;
   margin-top: -12px;
+}
+.fa-phone-contact:before {
+  content: "\f095";
+  vertical-align: middle !important;
+  margin-right: 8px;
+  font-size: 16px;
+  color: #fcc33c;
+  margin-right: 10px;
 }
 .fa-square-o:before {
   content: "\f096";
@@ -1217,6 +1238,9 @@
 }
 .fa-chevron-circle-down:before {
   content: "\f13a";
+  color: #FFF;
+  cursor: pointer;
+  font-size: 16px;
 }
 .fa-html5:before {
   content: "\f13b";

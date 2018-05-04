@@ -245,7 +245,7 @@ a:focus{
   border-radius: 20px;
   top: 20px;
   padding: .2rem 3rem 2.5rem 3rem;
-  max-width: 480px;
+  max-width: 580px;
 }
 .content-img{
   padding: 40% 40px 40% 40px;
@@ -483,6 +483,13 @@ h3 a:hover{
   -o-transition:All .5s ease;
   z-index: 1;
 }
+.element-menu{
+  margin-top:15px; 
+}
+
+
+
+
 /* =============
    Checkbox
 ============= */
@@ -1811,6 +1818,10 @@ a.brand:focus{
   width: 50%;
   margin-bottom: 30px;
 }
+.img-access-recuperar{
+  width: 28%;
+  margin-bottom: 10px;
+}
 .img-social{
   width: 50%;
 }
@@ -1973,6 +1984,13 @@ a.brand:focus{
   padding: 20px;
   background-color: #ffffff;
   border-radius: 0px 0px 10px 10px;
+}
+.content-dash-white-dash-beneficios{
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 10px 10px;
+  max-height: 400px;
+  overflow-y: scroll;
 }
 .icon-person{
   width: 40px;
