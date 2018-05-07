@@ -486,6 +486,9 @@ h3 a:hover{
 .element-menu{
   margin-top:15px; 
 }
+.btn-aling{
+  right: 0% !important;
+}
 
 
 
@@ -867,7 +870,7 @@ select {
 background-image: url(../images/flecha.png);
 background-repeat: no-repeat;
 background-position: right center;
-background-size: 10px;
+background-size: 24px;
 -webkit-appearance: none;
 -moz-appearance: none;
 -o-appearance: none;
@@ -2067,7 +2070,6 @@ a.active-profile{
   background-color: #3496e0;
   padding: 30px;
 }
-
 .modal-header p{
   margin:0;
   font-size: 1.4rem;
