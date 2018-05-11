@@ -1,11 +1,33 @@
 /* ------------------------------------------------------------------------------- */
 /*   Max width 1024px
 /* ------------------------------------------------------------------------------- */
-
+@media (max-width: 1366px){
+  .content-scroll-white {
+    max-height: 1024px;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  .section-bg-cotizar{
+    height: 1024px;
+    overflow: hidden;
+  }
+}
 
 @media (max-width: 1024px){
   .content-text-home{
     margin-top: 10rem !important;
+  }
+  .content-scroll-white {
+    max-height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+  }
+  .section-bg-cotizar{
+    height: 100vh;
+    overflow: hidden;
+  }
+  .container-fluid{
+  overflow-x: auto;
   }
   h5{
     font-size: 1rem;
@@ -216,7 +238,13 @@
   }
   .bg-login-blue-3 {
     padding: .9rem 1rem .9rem 1rem;
-}
+  }
+  .section-bg-cotizar{
+    height: auto;
+  }
+  .content-scroll-white {
+    max-height: 100% !important;
+  }
 
 }
 /* ------------------------------------------------------------------------------- */
@@ -233,7 +261,7 @@
   }
 
   .section-bg-cotizar{
-    height: 500px;
+    height: auto;
   }
   .section-bg-blue{
     height: 250px;

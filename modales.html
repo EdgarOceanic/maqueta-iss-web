@@ -19,7 +19,78 @@
 <link href="css/icons.css" rel="stylesheet" media="screen" type="text/css">
 <link href="css/responsive.css" rel="stylesheet" media="screen" type="text/css">
 </head>
-<body class="overflow-y-lg">
+<body>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-success">Success</button>
+  </div>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-process">Proceso</button>
+  </div>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-fiscal">fiscal</button>
+  </div>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-mail">mail</button>
+  </div>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-captcha">Catpcha</button>
+  </div>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-cancelar-poliza">Cancelar póliza</button>
+  </div>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-mail-process">Correo póliza</button>
+  </div>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-error">Error</button>
+  </div>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-coberturas">Coberturas</button>
+  </div>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-share-email">Input correo</button>
+  </div>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-save">Guardar</button>
+  </div>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-referidos">Referidos</button>
+  </div>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-cobrar">Cobrar</button>
+  </div>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-cobrar">Cobrar</button>
+  </div>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-share">Compartir</button>
+  </div>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-stars">Calificación</button>
+  </div>
+
+  <div class="col-lg-2">
+    <button class="btn btn-cotizar" data-toggle="modal" data-target="#modal-textarea">Comentarios</button>
+  </div>
+
+
+  
 
   <!-- Modal Success -->
 
@@ -405,6 +476,53 @@
               <i class="fa fa-facebook-square"></i><i class="fa fa-envelope-2"></i>
             </div>
           </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Modal Estrellas-->
+
+  <div id="modal-stars" class="modal modal-message fade" role="dialog">
+    <div class="modal-header modal-content-special">
+      <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center m-b-30">
+          <h5 class="text-white">Tú opinión es muy importante</h5>
+          <p class="text-white"><strong>Queremos saber</strong>, cómo calificarías:</p>
+      </div>
+
+      <div class="row margin-content text-center">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+          <div class="m-b-20">
+            <p class="text-white m-b-40">La prima de la póliza de acuerdo con las coberturas ofrecidas.</p>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 m-b-20">
+            <i class="fa fa-star-on"></i>
+            <i class="fa fa-star-on"></i>
+            <i class="fa fa-star-on"></i>
+            <i class="fa fa-star-off"></i>
+            <i class="fa fa-star-off"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
+        <a href="#"><button class="btn">COMPARTIR</button></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Comentarios-->
+
+  <div id="modal-textarea" class="modal modal-message fade" role="dialog">
+    <div class="modal-header modal-content-special">
+      <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-left">
+            <label class="text-white">*Comentarios:</label>
+            <textarea type="text" class="inp-cotizar"></textarea>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
+            <a href="#"><button class="btn">COMPARTIR</button></a>
         </div>
     </div>
   </div>

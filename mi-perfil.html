@@ -20,6 +20,7 @@
 <link href="css/responsive.css" rel="stylesheet" media="screen" type="text/css">
 </head>
 <body class="bg-dash">
+  <div>
     
     <div class="loader"><div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div></div>
 
@@ -80,13 +81,20 @@
                     <ul>
                       <li><a href="#" class="link-nav active-profile">Datos personales</a></li>
                       <li><a href="mi-perfil-2.html" class="link-nav">Domicilio</a></li>
-                      <li><a href="mi-perfil-3.html" class="link-nav">Tarjeta de credito/Débito</a></li>
-                      <li><a href="mi-perfil-4.html" class="link-nav">Datos Físcales</a></li>
+                      <li><a href="mi-perfil-4.html" class="link-nav">Datos Físcales / Bancarios</a></li>
+                      <li><a href="cambio-contrasena.html" class="link-nav active-profile">Cambio de Contraseña</a></li>
                     </ul>
                   </nav>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                   <form>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 m-b-20 danger">
+                      <ul>
+                        <li>Campo Obligatorio</li>
+                        <li>Campo Obligatorio</li>
+                      </ul>
+                    </div>
+                    
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
                       <label class="text-label">*Nombre (s):</label>
                       <input type="text" class="inp-cotizar">
@@ -131,17 +139,22 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-                      <label class="text-label">*Edad:</label>
+                      <label class="text-label">*Teléfono:</label>
                       <input type="text" class="inp-cotizar">
                     </div>
 
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-                      <label class="text-label">*RFC</label>
+                      <label class="text-label">*Correo Electrónico</label>
+                      <input type="email" class="inp-cotizar">
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 m-b-20">
+                      <label class="text-label">*Código de Invitado:</label>
                       <input type="text" class="inp-cotizar">
                     </div>
 
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 m-b-20">
-                      <label class="text-label">*CURP:</label>
+                      <label class="text-label">*Código de Anfitrión:</label>
                       <input type="text" class="inp-cotizar">
                     </div>
                     
@@ -359,6 +372,7 @@
 
 
 <!-- Scripts -->
-<script src="js/scripts.js"></script> 
+<script src="js/scripts.js"></script>
+  </div>
 </body>
 </html>

@@ -1613,6 +1613,12 @@
 }
 .fa-child:before {
   content: "\f1ae";
+  vertical-align: middle !important;
+  margin-right: 8px;
+  font-size: 16px;
+  color: #fcc33c;
+  position: absolute;
+  margin-top: -12px;
 }
 .fa-paw:before {
   content: "\f1b0";

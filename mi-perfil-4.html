@@ -78,35 +78,57 @@
                     <ul>
                       <li><a href="mi-perfil.html" class="link-nav">Datos personales</a></li>
                       <li><a href="mi-perfil-2.html" class="link-nav">Domicilio</a></li>
-                      <li><a href="mi-perfil-3.html" class="link-nav">Tarjeta de credito/Débito</a></li>
-                      <li><a href="#" class="link-nav active-profile">Datos Físcales</a></li>
+                      <li><a href="mi-perfil-4.html" class="link-nav">Datos Físcales / Bancarios</a></li>
+                      <li><a href="cambio-contrasena.html" class="link-nav active-profile">Cambio de Contraseña</a></li>
                     </ul>
                   </nav>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                   <form>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 m-b-20 danger">
+                      <ul>
+                        <li>Campo Obligatorio</li>
+                        <li>Campo Obligatorio</li>
+                      </ul>
+                    </div>
+                    
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
                       <label class="text-label">*RFC:</label>
                       <input type="text" class="inp-cotizar">
                     </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-6">
-                      <label class="text-label">*Razón Social:</label>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                      <label class="text-label">*CURP:</label>
                       <input type="text" class="inp-cotizar">
                     </div>
 
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-                      <label class="text-label">*Tipo:</label>
+                      <label class="text-label">*Correo Electónico:</label>
+                      <input type="email" class="inp-cotizar">
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                      <label class="text-label">*Teléfono:</label>
+                      <input type="tel" class="inp-cotizar">
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                      <label class="text-label">*Nombres(s):</label>
                       <input type="text" class="inp-cotizar">
                     </div>
 
-                    <div class="col-lg-12">
-                      <p class="text-dark text-left">Domicilio Físcal</p>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                      <label class="text-label">*Apellido Paterno:</label>
+                      <input type="text" class="inp-cotizar">
                     </div>
 
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                      <label class="text-label">*Apellido Materno:</label>
+                      <input type="text" class="inp-cotizar">
+                    </div>
 
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-                      <label class="text-label">* Calle:</label>
+                      <label class="text-label">*Calle:</label>
                       <input type="text" class="inp-cotizar">
                     </div>
 
@@ -133,8 +155,13 @@
                     </div>
 
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-                      <label class="text-label">* Delegación/Municipio:</label>
-                      <input type="text" class="input-none">
+                      <label class="text-label">*Delegación/Municipio:</label>
+                      <select class="inp-cotizar">
+                        <option value="">Seleccione uno:</option>
+                        <option value="opcion-1">Opción 1</option>
+                        <option value="opcion-2">Opción 2</option>
+                        <option value="opcion-n">Opción N</option>
+                      </select>
                     </div>
 
                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 m-b-20">
@@ -146,6 +173,42 @@
                         <option value="opcion-n">Opción N</option>
                       </select>
                     </div>
+
+                    <div class="col-lg-12">
+                      <p class="text-dark text-left">Datos Bancarios</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 m-b-20">
+                      <label class="text-label">*Banco:</label>
+                      <select class="inp-cotizar">
+                        <option value="">Seleccione uno:</option>
+                        <option value="opcion-1">Opción 1</option>
+                        <option value="opcion-2">Opción 2</option>
+                        <option value="opcion-n">Opción N</option>
+                      </select>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+                      <label class="text-label">* Cuenta CLABE:</label>
+                      <input type="text" class="inp-cotizar">
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-6 margin-special">
+                      <div class="col-lg-12">
+                        <label class="text-label">*Género:</label>
+                      </div>
+                                
+                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-l-0 m-t-20">
+                        <label class="container-radio text-label">Usar Datos Personales
+                          <input type="radio" name="radio">
+                          <span class="checkmark"></span>
+                        </label>
+                      </div>
+                    </div>
+
+                    
+
+                    
                     <div class="col-lg-12 text-right-content">
                       <a href="#"><button class="btn-cancel">CANCELAR</button></a>
                       <a href="#"><button class="btn">GUARDAR</button></a>
