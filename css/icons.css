@@ -1317,6 +1317,7 @@
 }
 .fa-share-square:before {
   content: "\f14d";
+  margin-right: 5px;
 }
 .fa-compass:before {
   content: "\f14e";

@@ -514,6 +514,17 @@ code {
   overflow: hidden;
   overflow-y: scroll;
 }
+.margin-center{
+  margin-top: 25%;
+
+}
+.text-btn-right{
+  text-align: right;
+}
+
+.text-btn-left{
+  text-align: left;
+}
 
 
 
@@ -811,6 +822,7 @@ input.inp-log[type='password'],
 input.inp-log[type='email'],
 input.inp-log[type="search"],
 input.inp-log[type="tel"],
+input.inp-log[type="date"],
 textarea.inp-log,
 select.inp-log{
   display: inline-block;
@@ -828,6 +840,9 @@ select.inp-log{
   -webkit-transition: all .15s;
        -o-transition: all .15s;
           transition: all .15s;
+  border-right: none;
+  border-left: none;
+  border-top: none;:  
 }
 
 textarea{
@@ -942,6 +957,20 @@ label.error{
           transition: all .3s ease-out!important;
 }
 .btn-cancel{
+  color:#063d66;
+  letter-spacing: 0.025em;
+  font-size: 1rem;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  border-radius: 30px;
+  padding: .3em 2em;
+  background-color: #FFF;
+  text-decoration: none;
+  font-family: 'montserratbold';
+  -webkit-transition: all .3s ease-out!important;
+          transition: all .3s ease-out!important;
+}
+.btn-action{
   color:#063d66;
   letter-spacing: 0.025em;
   font-size: 1rem;
@@ -1818,7 +1847,7 @@ a.brand:focus{
   -moz-box-shadow: 10px 10px 26px -9px rgba(0,35,64,0.47);
   box-shadow: 10px 10px 26px -9px rgba(0,35,64,0.47);
   text-align: center;
-  min-height: 494px;
+  min-height: 450px;
 
 }
 .bg-login-blue-3{
@@ -1844,6 +1873,10 @@ a.brand:focus{
 }
 .img-access{
   width: 50%;
+  margin-bottom: 30px;
+}
+.img-access-general{
+  width: 25%;
   margin-bottom: 30px;
 }
 .img-access-recuperar{
@@ -2143,7 +2176,7 @@ a.active-profile{
   width: 800px;
 }
 .modal-content-special{
-  margin: 10% 25%;
+  margin: 5% 25%;
 }
 
 
@@ -2633,6 +2666,13 @@ label{
   height: 980px;
   overflow: hidden;
 }
+.section-bg-emision{
+  background-size: cover;
+  background-position: center;
+  background-image:url(../images/bg/bg1.jpg);
+  height: 100vh;
+  overflow: hidden;
+}
 .section-bg-dash{
   background-size: cover;
   background-position: center;
@@ -2641,7 +2681,13 @@ label{
 }
 .section-bg-blue{
   background-color: #063d66;
-  height: 100vh;
+  height: 800px;
+  overflow: hidden;
+}
+.section-bg-blue-2{
+  background-color: #3496e0;
+  height: 950px;
+  overflow: hidden;
 }
 .section-bg-white{
   width: 100%;

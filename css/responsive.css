@@ -11,6 +11,15 @@
     height: 1024px;
     overflow: hidden;
   }
+  .section-bg-blue-2{
+    height: 1024px;
+    overflow: hidden;
+  }
+  .section-bg-emision{
+    height: 100vh;
+    overflow: hidden;
+  }
+
 }
 
 @media (max-width: 1024px){
@@ -26,8 +35,13 @@
     height: 100vh;
     overflow: hidden;
   }
-  .container-fluid{
-  overflow-x: auto;
+  .section-bg-blue{
+    height: 100vh;
+    overflow: hidden;
+  }
+  .section-bg-blue-2{
+    height: 100vh;
+    overflow: hidden;
   }
   h5{
     font-size: 1rem;
@@ -73,6 +87,12 @@
   }
   .img-access-recuperar{
     width: 32%;
+  }
+  .icon-modal{
+    float: none;
+  }
+  .p-t-m{
+    padding: 20px;
   }
   
 }
@@ -123,6 +143,10 @@
   }
   .section-bg-blue{
     height: 270px;
+  }
+  .section-bg-blue{
+    height: 270px;
+    overflow: hidden;
   }
 
   .content-log{
@@ -242,8 +266,24 @@
   .section-bg-cotizar{
     height: auto;
   }
+  .section-bg-blue{
+    height: 250px;
+  }
+  .section-bg-blue-2{
+    height: 450px;
+  }
   .content-scroll-white {
     max-height: 100% !important;
+  }
+  .section-bg-emision{
+    height: 250px;
+    overflow: hidden;
+  }
+  .margin-center{
+    margin-top: 5%;
+  }
+  .modal-content-special {
+    margin: 10% 5%;
   }
 
 }
@@ -259,12 +299,14 @@
   .content-text-home{
     margin-top: 6rem !important;
   }
-
   .section-bg-cotizar{
     height: auto;
   }
+  .section-bg-blue-2{
+    height: 450px;
+  }
   .section-bg-blue{
-    height: 250px;
+    height: 300px;
   }
   .content-img{
     padding: 15% 10% 10% 10%;
@@ -338,6 +380,17 @@
     padding: 20px 20px 0px 20px;
     position: relative;
   }
+  .section-bg-emision{
+    height: 300px;
+    overflow: hidden;
+  }
+  .margin-center{
+    margin-top: 5%;
+  }
+  .btn-action{
+    width: 200px;
+    height: 50px;
+  }
   
 }
 /* ------------------------------------------------------------------------------- */
@@ -373,6 +426,13 @@
     right: 4%;
     top: 5%;
   }
+  .text-btn-right{
+    text-align: center !important;
+  }
+
+  .text-btn-left{
+    text-align: center !important;
+  }
 
 
 }
@@ -390,6 +450,10 @@
   }
   .section-bg-cotizar{
     height: 250px;
+  }
+  .section-bg-blue-2{
+    height: 450px;
+    overflow: hidden;
   }
   .section-bg-blue{
     height: 300px;
@@ -457,6 +521,10 @@
   .section-bg-blue{
     height: 250px;
   }
+  .section-bg-blue-2{
+    height: 350px;
+    overflow: hidden;
+  }
   .btn-calendar{
     height: 43px;
   }
@@ -506,8 +574,11 @@
   .copy-bottom-password{
     bottom: 4%;
   }
-
-
+  .section-bg-emision{
+    height: 200px;
+    overflow: hidden;
+  }
+  
 }
 /* ------------------------------------------------------------------------------- */
 /*   Max width 415px
@@ -842,6 +913,7 @@
   }
 }
 
+}
 
 
 
