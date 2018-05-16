@@ -190,6 +190,20 @@
 .fa-heart:before {
   content: "\f004";
 }
+
+/*fer*/
+.fa-estrella:before {
+  content: "\f005";
+  color: #cccccc;
+  font-size: 24px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.fa-estrella-prendida:before {
+  color: #FCC33C;
+}
+
 .fa-star:before {
   content: "\f005";
   color: #FCC33C;
