@@ -162,7 +162,7 @@
     min-height: 370px;
   }
   .bg-login-blue-2{
-    min-height: 499px;
+    min-height: 458px;
   }
   .bg-login-blue-3{
     padding: 2rem 1rem 1rem 1rem;
@@ -391,6 +391,9 @@
     width: 200px;
     height: 50px;
   }
+  .copy-bottom-register{
+    display: none;
+  }
   
 }
 /* ------------------------------------------------------------------------------- */
@@ -607,7 +610,7 @@
 
 @media (max-width: 380px){
   .register-background{
-    height: 100vh;
+    height: 850px;
   }
   .login-background{
     height: 100vh;
@@ -774,7 +777,7 @@
     bottom: -15%;;
   }
   .copy-bottom-register{
-    bottom: -70%;;
+    bottom: -95%;
   }
 }
 
