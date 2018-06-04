@@ -1177,10 +1177,6 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: inherit;
-  font-weight: 500;
-  line-height: 1.1;
-  color: inherit;
 }
 h1 small,
 h2 small,
@@ -1326,12 +1322,6 @@ mark,
 }
 .text-capitalize {
   text-transform: capitalize;
-}
-.text-muted {
-  color: #777;
-}
-.text-primary {
-  color: #337ab7;
 }
 a.text-primary:hover,
 a.text-primary:focus {

@@ -152,18 +152,18 @@ h1,
   color: #fff;
   letter-spacing: -0.025em;
   margin:0.5em 0;
-  font-family: 'montserratextrabold'
+  font-family: 'montserratextrabold';
 }
 
 h2,
 .h2{ 
-  font-weight: 800;
-  font-size: 2rem;
-  line-height: 1.166;
-  color: #fff;
+  font-weight: 800 !important;
+  font-size: 2rem !important;
+  line-height: 1.166 !important;
+  color: #fff !important;
   letter-spacing: 0;
   margin:2.6rem 0;
-  font-family: 'montserratextrabold'
+  font-family: 'montserratextrabold';
 }
 
 h3,
@@ -198,7 +198,7 @@ h5,
   color: #063d66;
   letter-spacing: -0.025em;
   margin: 20px 0px 0px 0px;
-  font-family: 'montserratextrabold'
+  font-family: 'montserratextrabold';
 }
 
 h6,
@@ -265,6 +265,10 @@ a:focus{
 }
 .content-text-page2{
   margin-top: 80px;
+}
+.line-content{
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
 }
 .link-privacity{
   color: #FFF !important;
@@ -403,11 +407,11 @@ a.text-link-login{
 .input-none{
   width:100%;
   font-size: 1rem;
-  border-radius: 10px;
+  border-radius: 4px;
   color: #063D66 !important;
   background-color:#cfebf9 !important;
   border: 2px solid #cfebf9;
-  padding:0.2rem 1rem 0;
+  padding:0.6rem 1rem 0;
   height:3.6em;
   margin-bottom: 10px;
   -webkit-box-shadow:none;
@@ -415,6 +419,7 @@ a.text-link-login{
   -webkit-transition: all .15s;
        -o-transition: all .15s;
           transition: all .15s;
+  font-weight: 600;
 }
 .content-menu-cotizar{
   padding: 20px;
@@ -524,6 +529,9 @@ code {
 
 .text-btn-left{
   text-align: left;
+}
+.btn-margin{
+  margin-top: 35px;
 }
 
 
@@ -1328,6 +1336,10 @@ label.error{
 .text-label{
   color: #063d66;
 }
+.text-table-general{
+  color: #063d66;
+  font-family: 1rem;
+}
 .text-white-bold{
   color: #fff !important;
   font-weight: 800;
@@ -1979,6 +1991,10 @@ a.brand:focus{
 }
 .conteiner-dash-info{
   padding: 40px;
+}
+.close-dash{
+  position: absolute;
+  right: 4%;
 }
 .img-perfil{
   border-radius: 50%;
