@@ -81,7 +81,7 @@
 						<p class="text-dark">Datos complementarios del vehículo</p>
 						<form>
 							<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <label class="text-label">*No. de Serie:<i class="fa fa-question-circle" data-toggle="tooltip" data-placement="top" title="3 ó 4 números detrás de la tarjeta" ></i></label>
+                <label class="text-label">*No. de Serie:<i class="fa fa-question-circle"data-toggle="modal" data-target="#modal-help"></i></label>
                 <input type="text" class="inp-cotizar">
               </div>
               <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -92,8 +92,9 @@
                 <label class="text-label">*No. de Placas:</label>
                 <input type="text" class="inp-cotizar">
               </div>
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center"><p class="danger-input">Asegurate que todos los datos sean correctos.</p></div>
               <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
-                <a href="paso-2.html" class="btn-bottom"><button class="btn">SIGUIENTE</button></a>
+                <a href="paso-2.html" ><button class="btn">SIGUIENTE</button></a>
               </div>
 						</form>
 					</div>
@@ -102,6 +103,18 @@
     		</div>
     	</div>
     </div>	
+
+    <!-- Modal help -->
+
+  <div id="modal-help" class="modal modal-message fade" role="dialog">
+    <div class="modal-header modal-content-special">
+      <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
+      <div class="p-t-m text-center">
+        <h2 class="modal-title">Recuerda</h2>
+      </div>
+      <div class="text-left m-b-20"><p>Todos los datos deben ser correctos,de lo contrario pueden llegar a tener problemas en un siniestro.</p></div>
+    </div>
+  </div>
 
 
 <!-- jQuery -->

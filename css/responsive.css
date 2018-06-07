@@ -1,5 +1,5 @@
 /* ------------------------------------------------------------------------------- */
-/*   Max width 1024px
+/*   Max width 1366px
 /* ------------------------------------------------------------------------------- */
 @media (max-width: 1366px){
   .content-scroll-white {
@@ -9,6 +9,10 @@
   }
   .section-bg-cotizar{
     height: 1024px;
+    overflow: hidden;
+  }
+  .section-bg-blue{
+    height: 100vh;
     overflow: hidden;
   }
   .section-bg-blue-2{
@@ -21,6 +25,10 @@
   }
 
 }
+/* ------------------------------------------------------------------------------- */
+/*   Max width 1024px
+/* ------------------------------------------------------------------------------- */
+
 
 @media (max-width: 1024px){
   .content-text-home{
@@ -393,6 +401,9 @@
   }
   .copy-bottom-register{
     display: none;
+  }
+  .padding-xs{
+    padding: 0px 40px;
   }
   
 }

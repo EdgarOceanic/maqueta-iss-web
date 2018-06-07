@@ -262,6 +262,15 @@
   font-size: 16px;
 
 }
+.fa-times-log:before {
+  content: "\f00d";
+  color: #3496e0;
+  right: 0px;
+  cursor: pointer;
+  opacity: .8;
+  font-size: 16px;
+
+}
 .fa-search-plus:before {
   content: "\f00e";
 
@@ -555,6 +564,7 @@
   color: #fcc33c;
   font-size: 18px;
   cursor: default;
+  cursor: pointer;
 }
 .fa-info-circle:before {
   content: "\f05a";
@@ -632,6 +642,14 @@
   font-size: 21px;
   color: #0068cb;
   cursor: pointer;
+  margin-left: 10px;
+}
+.fa-eye-2:before {
+  content: "\f06e";
+  font-size: 18px;
+  color: #3496e0;
+  cursor: pointer;
+  margin-right: 5px;
 }
 .fa-eye-slash:before {
   content: "\f070";
