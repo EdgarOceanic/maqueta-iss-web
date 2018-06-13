@@ -110,7 +110,7 @@ body{
   font-weight: 400;
   letter-spacing: 0.025em;
   line-height: 2.1428;
-  color: #7e7e7e;
+  color: #272727;
   -webkit-overflow-scrolling:touch;
 }
 .body-fullpage{
@@ -174,7 +174,6 @@ h3,
   letter-spacing: -0.05em;
   color: #fff;
   margin: 1rem 0;
-  text-align: center;
   color: #063d66 !important;
   font-family: 'montserratbold';
 }
@@ -1358,6 +1357,12 @@ label.error{
   line-height: 21px;
   text-align: left;
 }
+.text-general{
+  font-size: 12px;
+  color: #4d4d4d;
+  line-height: 21px;
+  text-align: left;
+}
 
 .text-date{
   color: #cccccc;
@@ -1423,6 +1428,10 @@ label.error{
 }
 .text-muted{
   color: #063d66;
+}
+.text-muted-bold{
+  color: #000;
+  font-weight: 700;
 }
 .text-white{
   color: #fff !important;

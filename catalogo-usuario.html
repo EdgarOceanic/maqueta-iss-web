@@ -19,6 +19,14 @@
 <link href="css/icons.css" rel="stylesheet" media="screen" type="text/css">
 <link href="css/responsive.css" rel="stylesheet" media="screen" type="text/css">
 <link href="css/switchery.min.css" rel="stylesheet" type="text/css" /> 
+<link href="css/pages.css" rel="stylesheet" type="text/css" />
+
+<!-- DataTables -->
+    <link href="js/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <link href="js/plugins/datatables/buttons.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="js/plugins/datatables/fixedHeader.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="js/plugins/datatables/responsive.bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="js/plugins/datatables/scroller.bootstrap.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="bg-dash">
     
@@ -86,17 +94,8 @@
               <div class="content-dash-white-2">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nav-menu-dash">
                   <form>
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 m-b-20 text-left">
-                      <label class="text-label">*Empresa:</label>
-                      <select class="inp-cotizar">
-                        <option value="">Seleccione uno:</option>
-                        <option value="opcion-1">Opción 1</option>
-                        <option value="opcion-2">Opción 2</option>
-                        <option value="opcion-n">Opción N</option>
-                      </select>
-                    </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 m-b-20 text-left">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-left">
                       <label class="text-label">*Criterios de busqueda:</label>
                       <select class="inp-cotizar">
                         <option value="">Seleccione uno:</option>
@@ -105,48 +104,190 @@
                         <option value="opcion-n">Opción N</option>
                       </select>
                     </div>
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 text-left">
+                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-left">
                       <label class="text-label">* Ingresa un valor:</label>
                       <input type="text" class="inp-cotizar">
                     </div>
 
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-2 text-left btn-margin">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-right btn-margin m-b-20">
                       <a href="#"><button class="btn">Buscar</button></a>
+                      <a href="#"><button class="btn-cancel">Agregar</button></a>
                     </div>
                   </form>
                 </div>
                 <div class="tabla-responsiva-dash">
-                  <table class="table table-striped" cellspacing="0" border="0">
-                    <thead>
-                      <tr>
-                        <th>APELLIDO PATERNO</th>
-                        <th>APELLIDO MATERNO</th>
-                        <th>NOMBRE</th>
-                        <th>NOMBRE DE USUARIO</th>
-                        <th>CORREO ELECTRÓNICO</th>
-                        <th>ACTIVO</th>
-                        <th>BLOQUEADO</th>
-                        <th></th>
-                      </tr>
-                    </thead>
+                	<table id="datatable-responsive" class="table table-striped" cellspacing="0">
+                        <thead>
+                        	<tr>
+		                        <th>APELLIDO PATERNO</th>
+		                        <th>APELLIDO MATERNO</th>
+		                        <th>NOMBRE</th>
+		                        <th>NOMBRE DE USUARIO</th>
+		                        <th>CORREO ELECTRÓNICO</th>
+		                        <th>ACTIVO</th>
+		                        <th>BLOQUEADO</th>
+		                        <th></th>
+		                    </tr>
+                        </thead>
 
-                    <tbody>
-                      <tr class="content-table">
-                        <td><p class="text-table">Vak</p></td>
-                        <td><p class="text-table">Lugo</p></td>
-                        <td><p class="text-table">Cristhian</p></td>
-                        <td><p class="text-table">Cristhian Vak</p></td>
-                        <td><p class="text-table">cristhian@its-soluciones.com.mx</p></td>
-                        <td><p class="text-table">SI</p></td>
-                        <td><p class="text-table">NO</p></td>
-                        <td><i class="fa fa-edit"></i></td>
-                      </tr>
-                    <tbody>
-                  </table>
-                </div>
+                        <tbody>
+                        	<tr>
+	                            <td><p class="text-table">Vak</p></td>
+				                <td><p class="text-table">Lugo</p></td>
+				                <td><p class="text-table">Cristhian</p></td>
+				                <td><p class="text-table">Cristhian Vak</p></td>
+				                <td><p class="text-table">cristhian@its-soluciones.com.mx</p></td>
+				                <td><p class="text-table">SI</p></td>
+				                <td><p class="text-table">NO</p></td>
+				                <td><i class="fa fa-edit"></i></td>
+			                </tr>
+
+			                <tr>
+	                            <td><p class="text-table">Vak</p></td>
+				                <td><p class="text-table">Lugo</p></td>
+				                <td><p class="text-table">Cristhian</p></td>
+				                <td><p class="text-table">Cristhian Vak</p></td>
+				                <td><p class="text-table">cristhian@its-soluciones.com.mx</p></td>
+				                <td><p class="text-table">SI</p></td>
+				                <td><p class="text-table">NO</p></td>
+				                <td><i class="fa fa-edit"></i></td>
+			                </tr>
+
+			                <tr>
+	                            <td><p class="text-table">Vak</p></td>
+				                <td><p class="text-table">Lugo</p></td>
+				                <td><p class="text-table">Cristhian</p></td>
+				                <td><p class="text-table">Cristhian Vak</p></td>
+				                <td><p class="text-table">cristhian@its-soluciones.com.mx</p></td>
+				                <td><p class="text-table">SI</p></td>
+				                <td><p class="text-table">NO</p></td>
+				                <td><i class="fa fa-edit"></i></td>
+			                </tr>
+
+			                <tr>
+	                            <td><p class="text-table">Vak</p></td>
+				                <td><p class="text-table">Lugo</p></td>
+				                <td><p class="text-table">Cristhian</p></td>
+				                <td><p class="text-table">Cristhian Vak</p></td>
+				                <td><p class="text-table">cristhian@its-soluciones.com.mx</p></td>
+				                <td><p class="text-table">SI</p></td>
+				                <td><p class="text-table">NO</p></td>
+				                <td><i class="fa fa-edit"></i></td>
+			                </tr>
+
+			                <tr>
+	                            <td><p class="text-table">Vak</p></td>
+				                <td><p class="text-table">Lugo</p></td>
+				                <td><p class="text-table">Cristhian</p></td>
+				                <td><p class="text-table">Cristhian Vak</p></td>
+				                <td><p class="text-table">cristhian@its-soluciones.com.mx</p></td>
+				                <td><p class="text-table">SI</p></td>
+				                <td><p class="text-table">NO</p></td>
+				                <td><i class="fa fa-edit"></i></td>
+			                </tr>
+
+			                <tr>
+	                            <td><p class="text-table">Vak</p></td>
+				                <td><p class="text-table">Lugo</p></td>
+				                <td><p class="text-table">Cristhian</p></td>
+				                <td><p class="text-table">Cristhian Vak</p></td>
+				                <td><p class="text-table">cristhian@its-soluciones.com.mx</p></td>
+				                <td><p class="text-table">SI</p></td>
+				                <td><p class="text-table">NO</p></td>
+				                <td><i class="fa fa-edit"></i></td>
+			                </tr>
+
+			                <tr>
+	                            <td><p class="text-table">Vak</p></td>
+				                <td><p class="text-table">Lugo</p></td>
+				                <td><p class="text-table">Cristhian</p></td>
+				                <td><p class="text-table">Cristhian Vak</p></td>
+				                <td><p class="text-table">cristhian@its-soluciones.com.mx</p></td>
+				                <td><p class="text-table">SI</p></td>
+				                <td><p class="text-table">NO</p></td>
+				                <td><i class="fa fa-edit"></i></td>
+			                </tr>
+
+			                <tr>
+	                            <td><p class="text-table">Vak</p></td>
+				                <td><p class="text-table">Lugo</p></td>
+				                <td><p class="text-table">Cristhian</p></td>
+				                <td><p class="text-table">Cristhian Vak</p></td>
+				                <td><p class="text-table">cristhian@its-soluciones.com.mx</p></td>
+				                <td><p class="text-table">SI</p></td>
+				                <td><p class="text-table">NO</p></td>
+				                <td><i class="fa fa-edit"></i></td>
+			                </tr>
+
+			                <tr>
+	                            <td><p class="text-table">Vak</p></td>
+				                <td><p class="text-table">Lugo</p></td>
+				                <td><p class="text-table">Cristhian</p></td>
+				                <td><p class="text-table">Cristhian Vak</p></td>
+				                <td><p class="text-table">cristhian@its-soluciones.com.mx</p></td>
+				                <td><p class="text-table">SI</p></td>
+				                <td><p class="text-table">NO</p></td>
+				                <td><i class="fa fa-edit"></i></td>
+			                </tr>
+
+			                <tr>
+	                            <td><p class="text-table">Vak</p></td>
+				                <td><p class="text-table">Lugo</p></td>
+				                <td><p class="text-table">Cristhian</p></td>
+				                <td><p class="text-table">Cristhian Vak</p></td>
+				                <td><p class="text-table">cristhian@its-soluciones.com.mx</p></td>
+				                <td><p class="text-table">SI</p></td>
+				                <td><p class="text-table">NO</p></td>
+				                <td><i class="fa fa-edit"></i></td>
+			                </tr>
+
+			                <tr>
+	                            <td><p class="text-table">Vak</p></td>
+				                <td><p class="text-table">Lugo</p></td>
+				                <td><p class="text-table">Cristhian</p></td>
+				                <td><p class="text-table">Cristhian Vak</p></td>
+				                <td><p class="text-table">cristhian@its-soluciones.com.mx</p></td>
+				                <td><p class="text-table">SI</p></td>
+				                <td><p class="text-table">NO</p></td>
+				                <td><i class="fa fa-edit"></i></td>
+			                </tr>
+
+			                <tr>
+	                            <td><p class="text-table">Vak</p></td>
+				                <td><p class="text-table">Lugo</p></td>
+				                <td><p class="text-table">Cristhian</p></td>
+				                <td><p class="text-table">Cristhian Vak</p></td>
+				                <td><p class="text-table">cristhian@its-soluciones.com.mx</p></td>
+				                <td><p class="text-table">SI</p></td>
+				                <td><p class="text-table">NO</p></td>
+				                <td><i class="fa fa-edit"></i></td>
+			                </tr>
+
+			                <tr>
+	                            <td><p class="text-table">Vak</p></td>
+				                <td><p class="text-table">Lugo</p></td>
+				                <td><p class="text-table">Cristhian</p></td>
+				                <td><p class="text-table">Cristhian Vak</p></td>
+				                <td><p class="text-table">cristhian@its-soluciones.com.mx</p></td>
+				                <td><p class="text-table">SI</p></td>
+				                <td><p class="text-table">NO</p></td>
+				                <td><i class="fa fa-edit"></i></td>
+			                </tr>
+			                
+			                <tr>
+	                            <td><p class="text-table">Vak</p></td>
+				                <td><p class="text-table">Lugo</p></td>
+				                <td><p class="text-table">Cristhian</p></td>
+				                <td><p class="text-table">Cristhian Vak</p></td>
+				                <td><p class="text-table">cristhian@its-soluciones.com.mx</p></td>
+				                <td><p class="text-table">SI</p></td>
+				                <td><p class="text-table">NO</p></td>
+				                <td><i class="fa fa-edit"></i></td>
+			                </tr>
+                        </tbody>
+                    </table>
 
                 <div class="row"></div>
-                
               </div>
             </div>
           </div>
@@ -156,202 +297,48 @@
 
        
 
-  <!-- Modal Success -->
+  
 
-  <div id="modal-success" class="modal modal-message fade" role="dialog">
- 	<div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-            <img src="images/modal/icon-correct.png" class="icon-modal">
-            <div class="p-t-m">
-            	<p class="modal-subtitle">EL PROCESO SE COMPLETO</p>
-            	<h2 class="modal-title">¡CORRECTAMENTE!</h2>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <!-- Modal Process -->
-
-  <div id="modal-process" class="modal modal-message fade" role="dialog">
- 	<div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-            <img src="images/modal/icon-correct.png" class="icon-modal">
-            <div class="p-t-m">
-            	<p class="modal-subtitle">EL PROCESO SE COMPLETO</p>
-            	<h2 class="modal-title">¡CORRECTAMENTE!</h2>
-            	<p class="modal-subtitle">REVISA EL CALENDARIO</p>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <!-- Modal Fiscales -->
-
-  <div id="modal-fiscal" class="modal modal-message fade" role="dialog">
- 	<div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-            <img src="images/modal/icon-correct.png" class="icon-modal">
-            <div class="p-t-m">
-            	<p class="modal-subtitle">LOS DATOS FISCALES SON</p>
-            	<h2 class="modal-title">DIFERENTES</h2>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <!-- Modal mail -->
-
-  <div id="modal-mail" class="modal modal-message fade" role="dialog">
- 	<div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-            <img src="images/modal/icon-correct.png" class="icon-modal">
-            <div class="p-t-m">
-            	<p class="modal-subtitle">EL CORREO SE MANDO</p>
-            	<h2 class="modal-title">¡CORRECTAMENTE!</h2>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <!-- Modal Captcha -->
-
-  <div id="modal-captcha" class="modal modal-message fade" role="dialog">
- 	<div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-            <figure class="text-center"><img src="images/modal/nocaptcha.gif"></figure>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <!-- Modal Cancelar poliza -->
-
-  <div id="modal-cancelar-poliza" class="modal modal-message fade" role="dialog">
- 	<div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-            <img src="images/modal/icon-correct.png" class="icon-modal">
-            <div class="p-t-m">
-            	<p class="modal-subtitle">PARA CANCELAR LA PÓLIZA</p>
-            	<h2 class="modal-title">LLAMA AL 555555555</h2>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <!-- Modal Process Mail -->
-
-  <div id="modal-mail-process" class="modal modal-message fade" role="dialog">
- 	<div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-            <img src="images/modal/icon-correct.png" class="icon-modal">
-            <div class="p-t-m">
-            	<p class="modal-subtitle">EN BREVE RECIBIRAS UN CORREO ELECTRÓNICO</p>
-            	<h2 class="modal-title">PROCESO COMPLETO</h2>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <!-- Modal Error -->
-
-  <div id="modal-error" class="modal modal-message fade" role="dialog">
- 	<div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <span class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-            <img src="images/modal/icon-correct.png" class="icon-modal">
-            <div class="p-t-m">
-            	<h2 class="modal-title">¡OCURRIÓ UN ERROR!</h2>
-            	<p class="modal-subtitle">INTENTE MÁS TARDE</p>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-  <!-- Modal Save -->
-
-  <div id="modal-save" class="modal modal-message fade" role="dialog">
- 	<div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-save">
-          	<div class="col-lg-4 bg-modal-blue">
-
-          		<figure>
-                    <img src="images/img-login.png" class="img-access">
-                </figure>
-                <h2 class="m-rl-0">GUARDAR COTIZACIÓN</h2>
-          	</div>
-
-          	<div class="col-lg-8 bg-modal-white">
-          		<div class="col-lg-12">
-          			<span class="close close-blue" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></span>
-          		</div>
-          		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <label class="text-label">*Nombre:</label>
-                    <input type="text" class="inp-cotizar">
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <label class="text-label">*Correo Electrónico:</label>
-                    <input type="text" class="inp-cotizar">
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <label class="text-label">*Contraseña:</label>
-                    <input type="text" class="inp-cotizar">
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <label class="text-label">*Repetir Contraseña:</label>
-                    <input type="text" class="inp-cotizar">
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <label class="text-label">*Nombre de Cotización:</label>
-                    <input type="text" class="inp-cotizar">
-                </div>
-
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
-                   <a href="#"><button class="btn">GUARDAR</button></a>
-                </div>
-          	</div>
-          </div>
-        </div>
-    </div>
-  </div>
-
+  
 
 <!-- jQuery -->
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/jquery.validate.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.pagepiling.js"></script>
 <script src="js/switchery.min.js"></script>
 <script src="js/jquery.core.js"></script>
+
+<!-- Datatables-->
+        <script src="js/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="js/plugins/datatables/dataTables.bootstrap.js"></script>
+        <script src="js/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="js/plugins/datatables/buttons.bootstrap.min.js"></script>
+        <script src="js/plugins/datatables/jszip.min.js"></script>
+        <script src="js/plugins/datatables/pdfmake.min.js"></script>
+        <script src="js/plugins/datatables/vfs_fonts.js"></script>
+        <script src="js/plugins/datatables/buttons.html5.min.js"></script>
+        <script src="js/plugins/datatables/buttons.print.min.js"></script>
+        <script src="js/plugins/datatables/dataTables.fixedHeader.min.js"></script>
+        <script src="js/plugins/datatables/dataTables.keyTable.min.js"></script>
+        <script src="js/plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="js/plugins/datatables/responsive.bootstrap.min.js"></script>
+        <script src="js/plugins/datatables/dataTables.scroller.min.js"></script>
+
+<!-- Datatable init js -->
+        <script src="js/datatables.init.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#datatable').dataTable();
+                $('#datatable-keytable').DataTable( { keys: true } );
+                $('#datatable-responsive').DataTable();
+                $('#datatable-scroller').DataTable( { ajax: "assets/plugins/datatables/json/scroller-demo.json", deferRender: true, scrollY: 380, scrollCollapse: true, scroller: true } );
+                var table = $('#datatable-fixed-header').DataTable( { fixedHeader: true } );
+            } );
+            TableManageButtons.init();
+
+        </script>
 
 
 
