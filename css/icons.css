@@ -236,6 +236,11 @@
   position: absolute;
   margin-top: -12px;
 }
+.fa-user-2:before {
+  content: "\f007";
+  margin-left: 10px;
+  font-size: 16px;
+}
 .fa-film:before {
   content: "\f008";
 }
@@ -544,6 +549,11 @@
   cursor: pointer;
   opacity: .8;
   position: relative;
+}
+.fa-times-circle-3:before {
+  content: "\f057";
+  font-size: 16px;
+  margin-left: 10px;
 }
 .fa-times-circle-td:before {
   content: "\f057";
@@ -1354,6 +1364,11 @@
 .fa-share-square:before {
   content: "\f14d";
   margin-right: 5px;
+}
+.fa-share-square-2:before {
+  content: "\f14d";
+  margin-left: 10px;
+  font-size: 16px;
 }
 .fa-compass:before {
   content: "\f14e";
