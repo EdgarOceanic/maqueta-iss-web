@@ -19,6 +19,11 @@
     height: 1024px;
     overflow: hidden;
   }
+  .section-bg-blue-3{
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 40px;
+  }
   .section-bg-emision{
     height: 100vh;
     overflow: hidden;
@@ -49,6 +54,10 @@
   }
   .section-bg-blue-2{
     height: 100vh;
+    overflow: hidden;
+  }
+  .section-bg-blue-3{
+    height: 900px;
     overflow: hidden;
   }
   h5{
@@ -179,6 +188,9 @@
   .bg-cotizar{
     max-width: 100%;
     margin-bottom: 80px;
+  }
+  .section-bg-little{
+    height: 250px;
   }
   .brand{
     margin-left: 5%;
@@ -312,6 +324,9 @@
   }
   .section-bg-blue-2{
     height: 450px;
+  }
+  .section-bg-blue-3{
+    height: 350px;
   }
   .section-bg-blue{
     height: 300px;
@@ -592,6 +607,10 @@
     height: 200px;
     overflow: hidden;
   }
+  .content-img {
+    padding: 25% 10% 10% 10%;
+    text-align: center;
+  }
   
 }
 /* ------------------------------------------------------------------------------- */
@@ -613,6 +632,9 @@
   }
   .copy-bottom-register{
     bottom: -10%;
+  }
+  .m-b-xs20{
+    margin-bottom: 20px;
   }
 }
 /* ------------------------------------------------------------------------------- */

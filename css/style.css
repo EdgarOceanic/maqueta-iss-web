@@ -244,7 +244,7 @@ a:focus{
   border-radius: 20px;
   top: 20px;
   padding: .2rem 3rem 2.5rem 3rem;
-  max-width: 580px;
+  max-width: 100%;
 }
 .content-img{
   padding: 40% 40px 40% 40px;
@@ -489,8 +489,8 @@ h3 a:hover{
   font-family: 'montserratmedium';
   background-color: #f9f2f4;
   padding: 20px;
-  max-width: 20%;
-  text-align: center;
+  max-width: 50%;
+  text-align: justify;
   position: absolute;
   margin: 20px;
   border-radius: 5px;
@@ -499,7 +499,7 @@ h3 a:hover{
   -webkit-transition:All .5s ease;
   -moz-transition:All .5s ease;
   -o-transition:All .5s ease;
-  z-index: 1;
+  z-index: 100;
 }
 .element-menu{
   margin-top:15px; 
@@ -734,7 +734,7 @@ td{
 .tabla-responsiva{
     width: 100%;
     overflow-x: auto;
-    max-height: 290px; 
+    max-height: 350px;
 }
 .tabla-responsiva-dash{
     width: 100%;
@@ -790,11 +790,14 @@ td{
 .m-t-80{
   margin-top: 80px;
 }
+.m-t-100{
+  margin-top: 100px;
+}
 .m-t-n10{
   margin-top: -10px;
 }
 .m-t-n100{
-  margin-top: -100px;
+  margin-top: -50px;
 }
 
 /* Padding */
@@ -908,6 +911,7 @@ textarea{
   -webkit-transition: all .3s;
        -o-transition: all .3s;
           transition: all .3s;
+  margin-bottom: -10px;
 }
 
 input[type='text']:focus,
@@ -2111,6 +2115,12 @@ a.brand:focus{
   position: absolute;
   right: 4%;
 }
+.close-validation{
+  position: absolute;
+  text-align: right;
+  top: 0;
+  right: 5%;
+}
 .img-perfil{
   border-radius: 50%;
   width: 15%;
@@ -2811,11 +2821,22 @@ label{
   background-position: center;
   background-image:url(../images/bg/bg1.jpg);
 }
+.bg-white{
+  background-color: white;
+  height: 100%;
+}
 .section-bg-cotizar{
   background-size: cover;
   background-position: center;
   background-image:url(../images/bg/bg1.jpg);
   height: 980px;
+  overflow: hidden;
+}
+.section-bg-little{
+  background-size: cover;
+  background-position: center;
+  background-image:url(../images/bg/bg1.jpg);
+  height: 100vh;
   overflow: hidden;
 }
 .section-bg-emision{
@@ -2841,6 +2862,11 @@ label{
   height: 950px;
   overflow: hidden;
 }
+.section-bg-blue-3{
+  background-color: #063d66;
+  height: 900px;
+  overflow: hidden;
+}
 .section-bg-white{
   width: 100%;
   height: 100%;
@@ -2851,7 +2877,7 @@ label{
   position: absolute;
   white-space: nowrap;
   width: 0;
-  top:-0.55rem;
+  top:8rem;
   left: 4.9rem;
   font-weight: 600;
   text-transform: uppercase;
