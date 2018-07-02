@@ -247,18 +247,19 @@ a:focus{
   max-width: 100%;
 }
 .content-img{
-  padding: 40% 40px 40% 40px;
-
+  padding: 30% 40px 40% 40px;
+}
+.content-img-cotizar{
+  padding: 30% 40px 40% 40px;
 }
 .content-img-blue{
-  padding: 40% 40px 40% 40px;
+  padding: 3% 40px 40% 40px;
 
 }
 .content-white{
   padding: 20px 40px;
 
 }
-
 .content-text-home{
   margin-top: 10rem;
 }
@@ -273,7 +274,7 @@ a:focus{
   color: #FFF !important;
 }
 .img-app{
-  width: 100%;
+  width: 94%;
 }
 .text-blue{
   color: #A2D8F4;
@@ -372,9 +373,12 @@ a.text-link-login{
   color: #4d4d4d;
 }
 .yellow-line{
-  background-color: #fcc33c;
+  background-color: #3496e0;
   padding: 4px;
-  width: 100%; 
+  width: 100%;
+  height: 40px;
+  padding-right: 50px;
+  text-align: right;
 }
 .brand-cars{
   width: 90%;
@@ -406,6 +410,14 @@ a.text-link-login{
 .padding-btn-menu{
   padding-left: 0;
   padding-right: 40px;
+}
+.brand-special{
+  margin-left: 0px !important;
+  margin-bottom: 30px;
+}
+.brand-none{
+  margin-left: 40px !important;
+  margin-top: 20px;
 }
 .input-none{
   width:100%;
@@ -734,7 +746,6 @@ td{
 .tabla-responsiva{
     width: 100%;
     overflow-x: auto;
-    max-height: 350px;
 }
 .tabla-responsiva-dash{
     width: 100%;
@@ -781,6 +792,9 @@ td{
 .m-b-80{
   margin-bottom: 80px;
 }
+.m-b-100{
+  margin-bottom: 100px;
+}
 .m-b-es{
   margin-bottom: 17px;
 }
@@ -795,6 +809,9 @@ td{
 }
 .m-t-n10{
   margin-top: -10px;
+}
+.m-t-n20{
+  margin-top: -20px;
 }
 .m-t-n100{
   margin-top: -50px;
@@ -984,7 +1001,7 @@ display: none;
 }
 
 .form-group{
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 input.error{
@@ -998,6 +1015,53 @@ label.error{
   margin: 0.7em 0 0 0;
   color: #ff1d25;
 }
+label{
+  margin-bottom: 0px !important;
+  font-weight: normal;
+  font-size: .9rem;
+}
+
+/* Campos Contacto */
+
+input[type='text'],
+input[type='address'],
+input[type='url'],
+input[type='password'],
+input[type='email'],
+input[type="search"],
+input[type="tel"],
+textarea{
+  display: inline-block;
+  width:100%;
+  font-size: 1rem;
+  border-radius: 0.75em;
+  color: #fff;
+  background-color:#333;
+  border:0;
+  border-radius: 0;
+  padding:0.2rem 1rem 0;
+  height:3.6em;
+  -webkit-box-shadow:none;
+          box-shadow:none;
+      -webkit-appearance: none;
+  -webkit-transition: all .15s;
+       -o-transition: all .15s;
+          transition: all .15s;
+}
+
+input[type='text']:focus,
+input[type='address']:focus,
+input[type='url']:focus,
+input[type='password']:focus,
+input[type='email']:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+textarea:focus{
+  border-color: #f3ca2f;
+  outline: 0;
+  color: #fff;
+}
+
 
 
 /* Botons */
@@ -1717,7 +1781,7 @@ a.brand:focus{
   position: absolute;
   left: 0;
   top:9rem;
-  bottom:10.5rem;
+  bottom:8rem;
   padding-left: 15%;
   overflow-x:hidden;
   overflow-y:auto;
@@ -1779,7 +1843,7 @@ a.brand:focus{
 .menu-footer{
   position: absolute;
   left: 15%;
-  bottom: 4rem;
+  bottom: 1rem;
 }
 
 .menu-footer .social-list{
@@ -2043,7 +2107,7 @@ a.brand:focus{
 
 .contact-info{
   overflow:hidden;
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 .row-contact-info{
@@ -2126,6 +2190,12 @@ a.brand:focus{
   width: 15%;
   float: left;
   margin-right: 20px;
+}
+.img-perfil-2{
+  border-radius: 50%;
+  width: 2%;
+  margin-right: 10px;
+  margin-left: 40px;
 }
 .img-perfil-dash{
   border-radius: 50%;
@@ -2369,115 +2439,6 @@ a.active-profile{
   width: 100%;
   height: 20px;
 }
-
-
-/* Campos Contacto */
-
-input[type='text'],
-input[type='address'],
-input[type='url'],
-input[type='password'],
-input[type='email'],
-input[type="search"],
-input[type="tel"],
-textarea{
-  display: inline-block;
-  width:100%;
-  font-size: 1rem;
-  border-radius: 0.75em;
-  color: #fff;
-  background-color:#333;
-  border:0;
-  border-radius: 0;
-  padding:0.2rem 1rem 0;
-  height:3.6em;
-  -webkit-box-shadow:none;
-          box-shadow:none;
-      -webkit-appearance: none;
-  -webkit-transition: all .15s;
-       -o-transition: all .15s;
-          transition: all .15s;
-}
-
-textarea{
-  padding-top: 0.8rem;
-  height: 15rem;
-  resize:none;
-  -webkit-transition: all .3s;
-       -o-transition: all .3s;
-          transition: all .3s;
-}
-
-input[type='text']:focus,
-input[type='address']:focus,
-input[type='url']:focus,
-input[type='password']:focus,
-input[type='email']:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-textarea:focus{
-  border-color: #f3ca2f;
-  outline: 0;
-  color: #fff;
-}
-
-input.input-gray,
-textarea.input-gray{
-  background: #f6f6f6;
-}
-
-
-input.input-gray:focus,
-textarea.input-gray:focus{
-  background: #fff;
-}
-
-input::-moz-placeholder {
-  color: #999999;
-  opacity: 1;
-}
-
-input:-ms-input-placeholder {
-  color: #999;
-}
-
-input::-webkit-input-placeholder {
-  color: #999;
-}
-
-textarea::-moz-placeholder{
-  color: #999;
-  opacity: 1;
-}
-
-textarea:-ms-input-placeholder {
-  color: #999;
-}
-
-textarea::-webkit-input-placeholder {
-  color: #999;
-}
-
-.form-group{
-  margin-bottom: 30px;
-}
-
-input.error{
-  border-color: #f3ca2f;
-}
-
-.mc-label,
-label.error{
-  font-size: 0.83em;
-  font-weight: 400;
-  margin: 0.7em 0 0 0;
-}
-label{
-  margin-bottom: 0px !important;
-  font-weight: normal;
-  font-size: .9rem;
-}
-
 
 
 
@@ -2823,21 +2784,15 @@ label{
 }
 .bg-white{
   background-color: white;
-  height: 100%;
+  position: relative;
+  float: right;
 }
 .section-bg-cotizar{
   background-size: cover;
   background-position: center;
   background-image:url(../images/bg/bg1.jpg);
-  height: 980px;
-  overflow: hidden;
-}
-.section-bg-little{
-  background-size: cover;
-  background-position: center;
-  background-image:url(../images/bg/bg1.jpg);
-  height: 100vh;
-  overflow: hidden;
+  height: calc(100%);
+  position: fixed;
 }
 .section-bg-emision{
   background-size: cover;
@@ -2854,18 +2809,18 @@ label{
 }
 .section-bg-blue{
   background-color: #063d66;
-  height: 850px;
-  overflow: hidden;
+  height: calc(100%);
+  position: fixed;
 }
 .section-bg-blue-2{
   background-color: #3496e0;
-  height: 950px;
-  overflow: hidden;
+  height: calc(100%);
+  position: fixed;
 }
 .section-bg-blue-3{
   background-color: #063d66;
-  height: 900px;
-  overflow: hidden;
+  height: calc(100%);
+  position: fixed;
 }
 .section-bg-white{
   width: 100%;
@@ -3288,3 +3243,60 @@ label{
 .card-row:hover .card-read-more{
   color: #000;
 }
+
+/*-------------------------------------------------------------------------------
+  Calendario
+-------------------------------------------------------------------------------*/
+ngb-dp-weekday[_ngcontent-c5]{
+  color: #
+}
+.input-group .form-control:not(:last-child), .input-group-addon:not(:last-child), .input-group-btn:not(:first-child)>.btn-group:not(:last-child)>.btn, .input-group-btn:not(:first-child)>.btn:not(:last-child):not(.dropdown-toggle), .input-group-btn:not(:last-child)>.btn, .input-group-btn:not(:last-child)>.btn-group>.btn, .input-group-btn:not(:last-child)>.dropdown-toggle{
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  color: #063D66 !important;
+    background-color: #fff !important;
+    border-bottom: 1px solid #3496E0;
+    border-radius: 0;
+    padding: 0.2rem 1.5rem 0;
+    height: 2em;
+    margin-bottom: 15px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: all .15s;
+    -o-transition: all .15s;
+    transition: all .15s;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+.input-group-addon {
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #464a4c;
+    text-align: center;
+    background-color: #fcc33c;
+    color: #fff;
+    content: "\f1fd";
+    margin-left: -25px;
+    z-index: 10000;
+    height: 25px;
+    width: 25px;
+}
+.btn-secondary, .dropdown-menu{
+  color: #FFF;
+}
+select[_ngcontent-mjc-10]{
+  background: transparent;
+  color: #FFF;
+}
+.btn-link[_ngcontent-mjc-9] {
+  background: transparent;
+}
+.ngb-dp-day[_ngcontent-mjc-8], .ngb-dp-weekday[_ngcontent-mjc-8], .ngb-dp-week-number[_ngcontent-mjc-8]{
+  color: #063d66;
+}
+
+
+

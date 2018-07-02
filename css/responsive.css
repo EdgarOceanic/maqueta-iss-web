@@ -7,23 +7,6 @@
     overflow: hidden;
     overflow-y: auto;
   }
-  .section-bg-cotizar{
-    height: 1024px;
-    overflow: hidden;
-  }
-  .section-bg-blue{
-    height: 100vh;
-    overflow: hidden;
-  }
-  .section-bg-blue-2{
-    height: 1024px;
-    overflow: hidden;
-  }
-  .section-bg-blue-3{
-    height: 100vh;
-    overflow: hidden;
-    padding-top: 40px;
-  }
   .section-bg-emision{
     height: 100vh;
     overflow: hidden;
@@ -44,27 +27,8 @@
     overflow: hidden;
     overflow-y: auto;
   }
-  .section-bg-cotizar{
-    height: 100vh;
-    overflow: hidden;
-  }
-  .section-bg-blue{
-    height: 100vh;
-    overflow: hidden;
-  }
-  .section-bg-blue-2{
-    height: 100vh;
-    overflow: hidden;
-  }
-  .section-bg-blue-3{
-    height: 900px;
-    overflow: hidden;
-  }
   h5{
     font-size: 1rem;
-  }
-  .content-white{
-    padding: 10px;
   }
   .margin-special{
   margin-bottom: 0px;
@@ -151,6 +115,14 @@
     padding: 15% 10% 10% 10%;
     text-align: center;
   }
+  .section-bg-cotizar{
+    position: relative;
+    height: 300px;
+  }
+  .content-img-cotizar{
+    padding: 10% 40px 40% 40px;
+    text-align: center;
+  }
   .content-img-blue{
     padding: 5% 10% 10% 10%;
     text-align: center;
@@ -159,12 +131,22 @@
     max-height: 100%;
   }
   .section-bg-blue{
-    height: 270px;
+    height: 330px;
+    position: relative;
   }
-  .section-bg-blue{
-    height: 270px;
-    overflow: hidden;
+  .section-bg-blue-2{
+    height: 330px;
+    position: relative;
   }
+  .section-bg-blue-3{
+    height: 330px;
+    position: relative;
+  }
+
+  .brand-special{
+    margin-bottom: 10px;
+  }
+
 
   .content-log{
     left: 0% ;
@@ -283,15 +265,6 @@
   .bg-login-blue-3 {
     padding: .9rem 1rem .9rem 1rem;
   }
-  .section-bg-cotizar{
-    height: auto;
-  }
-  .section-bg-blue{
-    height: 250px;
-  }
-  .section-bg-blue-2{
-    height: 450px;
-  }
   .content-scroll-white {
     max-height: 100% !important;
   }
@@ -304,6 +277,12 @@
   }
   .modal-content-special {
     margin: 10% 5%;
+  }
+  .yellow-line{
+    margin-bottom: 30px;
+  }
+  .btn-margin{
+    margin-top: 15px;
   }
 
 }
@@ -319,17 +298,8 @@
   .content-text-home{
     margin-top: 6rem !important;
   }
-  .section-bg-cotizar{
-    height: auto;
-  }
-  .section-bg-blue-2{
-    height: 450px;
-  }
-  .section-bg-blue-3{
-    height: 350px;
-  }
-  .section-bg-blue{
-    height: 300px;
+  .brand img{
+    height: 3rem;
   }
   .content-img{
     padding: 15% 10% 10% 10%;
@@ -474,22 +444,12 @@
   .bg-login-white{
     max-width: 100%;
   }
-  .content-white{
-    padding: 10px;
-  }
-  .section-bg-cotizar{
-    height: 250px;
-  }
-  .section-bg-blue-2{
-    height: 450px;
-    overflow: hidden;
-  }
-  .section-bg-blue{
-    height: 300px;
+  3{
+    padding: 0px 0px 10px 0px;
   }
   h5{
     font-size: 2rem;
-    margin-top: 15px !important;
+    margin-top: 0px !important;
   }
   .btn-calendar{
     height: 43px;
@@ -538,6 +498,12 @@
   .copy-bottom-password{
     bottom: -10%;
   }
+  .container-fluid{
+    padding-left: 0px !important; 
+  }
+  .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+    padding-right: 0px !important;
+  }
 
 }
 
@@ -547,13 +513,6 @@
 
 
 @media (max-width: 480px){
-  .section-bg-blue{
-    height: 250px;
-  }
-  .section-bg-blue-2{
-    height: 350px;
-    overflow: hidden;
-  }
   .btn-calendar{
     height: 43px;
   }
@@ -611,6 +570,16 @@
     padding: 25% 10% 10% 10%;
     text-align: center;
   }
+  .section-bg-cotizar{
+    height: 250px;
+    text-align: center;
+  }
+  .yellow-line{
+    margin-bottom: 0px;
+  }
+  .icon-edit-content{
+    margin-top: 10px
+  }
   
 }
 /* ------------------------------------------------------------------------------- */
@@ -636,6 +605,24 @@
   .m-b-xs20{
     margin-bottom: 20px;
   }
+  .brand img{
+    height: 2rem;
+  }
+  .brand-cars{
+    height: 3.5rem;
+    width: auto;
+  }
+  .section-bg-blue{
+    height: 300px;
+  }
+  .section-bg-blue-2{
+    height: 300px;
+  }
+  .section-bg-blue-3{
+    height: 300px;
+  }
+
+  
 }
 /* ------------------------------------------------------------------------------- */
 /*   Max width 380px

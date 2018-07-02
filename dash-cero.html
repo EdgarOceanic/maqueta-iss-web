@@ -12,13 +12,12 @@
 <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
 
-<title>ISS</title> 
+<title>ISS</title>
 
 <!-- Styles -->
 <link href="css/style.css" rel="stylesheet" media="screen">
 <link href="css/icons.css" rel="stylesheet" media="screen" type="text/css">
 <link href="css/responsive.css" rel="stylesheet" media="screen" type="text/css">
-<link href="css/switchery.min.css" rel="stylesheet" type="text/css" /> 
 </head>
 <body class="bg-dash">
     
@@ -48,8 +47,6 @@
       </div>
     </div>
 
-
-
     <!-- Navbar -->
 
     <header class="header-dash">
@@ -57,7 +54,7 @@
       <a class="brand" href="#">
         <img class="brand-img" alt="Logo" src="images/logo_dash.png">
       </a>
-      <button type="button" class="navbar-toggle btn-" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
         <i class="fa fa-bars icon-menu"></i>
       </button>
     </header>
@@ -65,70 +62,66 @@
     <div class="container-fluid section-bg-dash">
     	<div class="container">
         <div class="conteiner-dash-info">
-          <div class="row m-b-40">
+          <div class="row m-b-30">
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 m-b-20 content-center-xs">
               <figure><img src="images/dash/img-perfil.png" class="img-perfil"></figure>
               <p class="name-perfil">Cristhian Alberto Vak</p>
               <h2 class="text-welcome">Bienvenido / Rol</h2>
             </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 text-right-content">
+              <a href="#"><button class="btn">COTIZAR</button></a>
+            </div>
           </div>
 
           <div class="row">
-            <div class="col-lg-12">
-              <header class="header-blue-extraccion">
-                <div class="close-dash">
-                  <a href="#"><i class="fa fa-times"></i></a>
-                </div>
-                <h2 class="text-dash-header">Extracción de Información</h2>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 m-b-20">
+              <header class="header-yellow-dash">
+                <a href=""><i class="fa fa-chevron-circle-down" style="float: right;"></i></a>
+                <h2 class="text-dash-header">Beneficios</h2>
+                <span class="text-muted">Conoce todos los movimientos.</span>
               </header>
-
-
-              <div class="content-dash-white-2">
-                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 nav-menu-dash">
-                  <form>
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 m-b-20 text-left">
-                      <label class="text-label">*Empresa:</label>
-                      <select class="inp-cotizar">
-                        <option value="">Seleccione uno:</option>
-                        <option value="opcion-1">Opción 1</option>
-                        <option value="opcion-2">Opción 2</option>
-                        <option value="opcion-n">Opción N</option>
-                      </select>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 m-b-20 text-left">
-                      <label class="text-label">*Fecha desde</label>
-                      <div class="input-calendar">
-                        <input type="date" class="inp-cotizar-calendar">
-                        <button type="button" class="btn-calendar" ng-click="open($event)"><i class="fa fa-calendar"></i></button>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 text-left">
-                      <label class="text-label">*Fecha de hasta</label>
-                      <div class="input-calendar">
-                        <input type="date" class="inp-cotizar-calendar">
-                        <button type="button" class="btn-calendar" ng-click="open($event)"><i class="fa fa-calendar"></i></button>
-                      </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-2 text-right btn-margin m-b-20">
-                      <a href="#"><button class="btn">Buscar</button></a>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 m-b-10">
-                      <div class="checkbox checkbox-primary">
-                        <input id="checkbox-2" type="checkbox">
-                        <label for="checkbox-2" class="text-label">
-                          Emisiones
-                        </label>
-                      </div>
-                    </div>
-                  </form>
+              <div class="content-dash-white-dash-beneficios">
+                <!-- Div estado cero -->
+                <div class="text-center">
+                  <p>No hay resultados para mostrar</p>
                 </div>
+                <!-- Div estado cero -->
+              </div>
+            </div>
 
-                <div class="row"></div>
-                
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 p-l-0 p-r-0">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 m-b-20">
+                <header class="header-blue-1-dash">
+                  <h2 class="text-dash-header">Pólizas Generadas</h2>
+                  <span class="text-muted">Todos tús documentos.</span>
+                   <h4># 3</h4>
+                   <figure class="text-right margen-image-dash"><img src="images/dash/dash-01.png" class="img-dash-header"></figure>
+                </header>
+               
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 m-b-20">
+                <header class="header-blue-2-dash">
+                  <h2 class="text-dash-header">Saldo Disponible</h2>
+                  <span class="text-muted">Conoce lo que has ganado.</span>
+                  <h4>$ 1,2800</h4>
+                  <figure class="text-right margen-image-dash"><img src="images/dash/dash-02.png" class="img-dash-header"></figure>
+                </header>
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <header class="header-blue-3-dash">
+                  <a href="mis-polizas.html"><i class="fa fa-chevron-circle-down" style="float: right;"></i></a>
+                  <h2 class="text-dash-header">Mis Pólizas</h2>
+                </header>
+                <div class="content-dash-white">
+                  <!-- Div estado cero -->
+                <div class="text-center">
+                  <p>No hay resultados para mostrar</p>
+                </div>
+                <!-- Div estado cero -->
+                </div>
               </div>
             </div>
           </div>
@@ -332,12 +325,10 @@
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.pagepiling.js"></script>
-<script src="js/switchery.min.js"></script>
-<script src="js/jquery.core.js"></script>
 
 
 
 <!-- Scripts -->
-<script src="js/scripts.js"></script> 
+<script src="js/scripts.js"></script>
 </body>
 </html>
