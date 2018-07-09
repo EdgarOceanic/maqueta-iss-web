@@ -3246,7 +3246,7 @@ a.active-profile{
 
 /*-------------------------------------------------------------------------------
   Calendario
--------------------------------------------------------------------------------*/
+------------------------------------------#3496E0-------------------------------------*/
 ngb-dp-weekday[_ngcontent-c5]{
   color: #
 }
@@ -3256,7 +3256,7 @@ ngb-dp-weekday[_ngcontent-c5]{
   font-size: 1rem;
   color: #063D66 !important;
     background-color: #fff !important;
-    border-bottom: 1px solid #3496E0;
+    border-bottom: 1px solid ;
     border-radius: 0;
     padding: 0.2rem 1.5rem 0;
     height: 2em;
@@ -3274,15 +3274,17 @@ ngb-dp-weekday[_ngcontent-c5]{
     margin-bottom: 0;
     font-size: 1rem;
     line-height: 1.25;
-    color: #464a4c;
+    color: #3496E0 !important;
     text-align: center;
-    background-color: #fcc33c;
+    background-color: transparent;
     color: #fff;
     content: "\f1fd";
-    margin-left: -25px;
     z-index: 10000;
-    height: 25px;
-    width: 25px;
+    width: 25px !important;
+    display: flex;
+    border: none;
+    position: absolute;
+    margin-left: -15px;
 }
 .btn-secondary, .dropdown-menu{
   color: #FFF;
@@ -3292,11 +3294,25 @@ select[_ngcontent-mjc-10]{
   color: #FFF;
 }
 .btn-link[_ngcontent-mjc-9] {
-  background: transparent;
+  background: transparent !important;
 }
 .ngb-dp-day[_ngcontent-mjc-8], .ngb-dp-weekday[_ngcontent-mjc-8], .ngb-dp-week-number[_ngcontent-mjc-8]{
-  color: #063d66;
+  color: #063d66 !important;
 }
-
+[_nghost-c3]{
+	color: #000 !important;
+}
+[_nghost-c6] > select[_ngcontent-c6]{
+	color: #000 !important;
+    background-color: transparent !important;
+    border: 0px !important;
+}
+.ngb-dp-arrow-btn[_ngcontent-c4] {
+    background-color: transparent !important;
+    border: 0px !important;
+}
+.ngb-dp-arrow-btn[_ngcontent-c4].btn:hover {
+    color:#063D66 !important;
+}
 
 
