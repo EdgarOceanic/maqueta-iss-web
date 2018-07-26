@@ -1,0 +1,400 @@
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+  <!-- FORMULARIO DE DATOS FISCALES Y BANCARIOS -->
+
+  <form
+    [formGroup]="myProfileFiscalDataForm"
+    class="js-form"
+    (submit)="submitMyProfileFiscalDataForm()"
+    novalidate="novalidate"
+  >
+
+    <!-- VALIDACIONES -->
+    <div
+      *ngIf="myProfileFiscalDataForm.invalid && (Rfc.touched || Curp.touched || Email.touched || PhoneNumber.touched || FirstName.touched || LastName.touched ||
+      SecondLastName.touched || Street.touched || OutdoorNumber.touched || PostalCode.touched  ||
+      Settlement.touched || Township.touched || FederalEntityId.touched || BankId.touched  || Clabe.touched )"
+      class="col-xs-12 col-sm-12 col-md-12 col-lg-12 m-b-20 danger">
+
+      <!-- RFC - VALIDACION -->
+      <ul *ngIf="Rfc.invalid && (Rfc.dirty || Rfc.touched)">
+        <li *ngIf="myProfileFiscalDataForm.controls['Rfc'].hasError('required')">
+          El <strong>RFC</strong> es requerido.
+        </li>
+      </ul>
+
+      <!-- CURP - VALIDACION -->
+      <ul *ngIf="Curp.invalid && (Curp.dirty || Curp.touched)">
+        <li *ngIf="myProfileFiscalDataForm.controls['Curp'].hasError('required')">
+          El <strong>Curp</strong> es requerido.
+        </li>
+      </ul>
+
+      <!-- Email - VALIDACION -->
+      <ul *ngIf="Email.invalid && (Email.dirty || Email.touched)">
+        <li *ngIf="myProfileFiscalDataForm.controls['Email'].hasError('required')">
+          El <strong>Correo Electrónico</strong> es requerido.
+        </li>
+        <li *ngIf="myProfileFiscalDataForm.controls['Email'].hasError('pattern')">
+          El <strong>Correo Electrónico</strong> es incorrecto.
+        </li>
+      </ul>
+
+      <!-- Telefono (PhoneNumber) - VALIDACION -->
+      <ul *ngIf="PhoneNumber.invalid && (PhoneNumber.dirty || PhoneNumber.touched)">
+        <li *ngIf="myProfileFiscalDataForm.controls['PhoneNumber'].hasError('required')">
+          El <strong>Teléfono</strong> es requerido.
+        </li>
+      </ul>
+
+      <!-- Nombres (FirstName) - VALIDACION -->
+      <ul *ngIf="FirstName.invalid && (FirstName.dirty || FirstName.touched)">
+        <li *ngIf="myProfileFiscalDataForm.controls['PhoneNumber'].hasError('required')">
+          El <strong>Nombre</strong> es requerido.
+        </li>
+      </ul>
+
+      <!-- Apellido PATERNO (LastName) - VALIDACION -->
+      <ul *ngIf="LastName.invalid && (LastName.dirty || LastName.touched)">
+        <li *ngIf="myProfileFiscalDataForm.controls['LastName'].hasError('required')">
+          El <strong>Apellido Paterno</strong> es requerido.
+        </li>
+      </ul>
+
+      <!-- Apellido Materno (SecondLastName) - VALIDACION -->
+      <ul *ngIf="SecondLastName.invalid && (SecondLastName.dirty || SecondLastName.touched)">
+        <li *ngIf="myProfileFiscalDataForm.controls['SecondLastName'].hasError('required')">
+          El <strong>Apellido Materno</strong> es requerido.
+        </li>
+      </ul>
+
+      <!-- Dirección (Street) - VALIDACION -->
+      <ul *ngIf="Street.invalid && (Street.dirty || Street.touched)">
+        <li *ngIf="myProfileFiscalDataForm.controls['Street'].hasError('required')">
+          La <strong>Calle</strong> es requerida.
+        </li>
+      </ul>
+
+
+      <!-- Código Postal (PostalCode) - VALIDACION -->
+      <ul *ngIf="PostalCode.invalid && (PostalCode.dirty || PostalCode.touched)">
+        <li *ngIf="myProfileFiscalDataForm.controls['PostalCode'].hasError('required')">
+          El <strong>Código Postal</strong> es requerido.
+        </li>
+        <li *ngIf="myProfileFiscalDataForm.controls['PostalCode'].hasError('pattern')">
+          El <strong>Código Postal</strong> tiene un formato incorrecto.
+        </li>
+      </ul>
+
+      <!-- Colonia (Settlement) - VALIDACION -->
+      <ul *ngIf="Settlement.invalid && (Settlement.dirty || Settlement.touched)">
+        <li *ngIf="myProfileFiscalDataForm.controls['Settlement'].hasError('required')">
+          La <strong>Colonia</strong> es requerida.
+        </li>
+      </ul>
+
+      <!-- Delegación o Municipio (Township) - VALIDACION -->
+      <ul *ngIf="Township.invalid && (Township.dirty || Township.touched)">
+        <li *ngIf="myProfileFiscalDataForm.controls['Township'].hasError('required')">
+          La <strong>Delegación o Municipio</strong> es requerid@.
+        </li>
+      </ul>
+
+      <!-- Entidad Federativa (FederalEntityId) - VALIDACION -->
+      <ul *ngIf="FederalEntityId.invalid && (FederalEntityId.dirty || FederalEntityId.touched)">
+        <li *ngIf="myProfileFiscalDataForm.controls['FederalEntityId'].hasError('required')">
+          Debes seleccionar el <strong>Estado o Entidad Federativa</strong>.
+        </li>
+      </ul>
+
+      <!-- Banco (BankId) - VALIDACION -->
+      <ul *ngIf="BankId.invalid && (BankId.dirty || BankId.touched)">
+        <li *ngIf="myProfileFiscalDataForm.controls['BankId'].hasError('required')">
+          Debes seleccionar el <strong>Banco</strong>.
+        </li>
+      </ul>
+
+      <!-- CLABE (Clabe) - VALIDACION -->
+      <ul *ngIf="Clabe.invalid && (Clabe.dirty || Clabe.touched)">
+        <li *ngIf="myProfileFiscalDataForm.controls['Clabe'].hasError('required')">
+          La <strong>Clabe</strong> es requerica.
+        </li>
+      </ul>
+
+    </div>
+    <!-- FINALIZAN LAS VALIDACIONES -->
+
+    <!-- USAR DATOS PERSONALES -->
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="checkbox checkbox-primary">
+        <input type="checkbox" name="checkbox" id="checkbox_id" (change)="usePersonalData()">
+        <label for="checkbox_id" class="text-label">Usar Datos Personales</label>
+      </div>
+      <hr>
+    </div>
+
+    <!-- RFC -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label" for="Rfc">*RFC:</label>
+      <input id="Rfc"
+             name="Rfc"
+             [(ngModel)]="userData.FiscalData.Rfc"
+             formControlName="Rfc"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="RFC"
+             aria-required="true"
+             autocomplete="off"
+      >
+    </div>
+
+    <!-- CURP -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label" for="Curp">*CURP:</label>
+      <input id="Curp"
+             name="Curp"
+             [(ngModel)]="userData.FiscalData.Curp"
+             formControlName="Curp"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="CURP"
+             aria-required="true"
+             autocomplete="off"
+      >
+    </div>
+
+    <!-- Correo Electronico -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label" for="Email">*Correo Electrónico:</label>
+      <input id="Email"
+             name="Rfc"
+             [(ngModel)]="userData.FiscalData.Email"
+             formControlName="Email"
+             required
+             type="email"
+             class="inp-cotizar"
+             placeholder="Correo Electrónico"
+             aria-required="true"
+             autocomplete="off"
+      >
+    </div>
+
+    <!-- TELEFONO -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label" for="PhoneNumber">*Teléfono:</label>
+      <input id="PhoneNumber"
+             name="PhoneNumber"
+             [(ngModel)]="userData.FiscalData.PhoneNumber"
+             formControlName="PhoneNumber"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Teléfono"
+             aria-required="true"
+             autocomplete="off"
+      >
+    </div>
+
+
+    <!-- NOMBRES -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label" for="FirstName">*Nombres(s):</label>
+      <input id="FirstName"
+             name="FirstName"
+             [(ngModel)]="userData.FiscalData.FirstName"
+             formControlName="FirstName"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Nombres(s)"
+             aria-required="true"
+             autocomplete="off"
+      >
+    </div>
+
+    <!-- APELLIDO PATERNO -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label" for="LastName">*Apellido Paterno:</label>
+      <input id="LastName"
+             name="LastName"
+             [(ngModel)]="userData.FiscalData.LastName"
+             formControlName="LastName"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Apellido Paterno"
+             aria-required="true"
+             autocomplete="off"
+      >
+    </div>
+
+    <!-- APELLIDO MATERNO -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label" for="SecondLastName">*Apellido Materno:</label>
+      <input id="SecondLastName"
+             name="SecondLastName"
+             [(ngModel)]="userData.FiscalData.SecondLastName"
+             formControlName="SecondLastName"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Apellido Paterno"
+             aria-required="true"
+             autocomplete="off"
+      >
+    </div>
+
+    <!-- CALLE -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label" for="Street">*Calle:</label>
+      <input id="Street"
+             name="Street"
+             [(ngModel)]="userData.FiscalData.Address.Street"
+             formControlName="Street"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Calle"
+             aria-required="true"
+             autocomplete="off"
+      >
+    </div>
+
+    <!-- NUMERO EXTERIOR E INTERIOR -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-l-0">
+        <label class="text-label" for="OutdoorNumber">*No. Ext.</label>
+        <input id="OutdoorNumber"
+               name="OutdoorNumber"
+               [(ngModel)]="userData.FiscalData.Address.OutdoorNumber"
+               formControlName="OutdoorNumber"
+               type="text"
+               class="inp-cotizar"
+               placeholder="No. Ext"
+               autocomplete="off"
+        >
+      </div>
+
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-r-0">
+        <label class="text-label" for="InteriorNumber">*No. Int.</label>
+        <input id="InteriorNumber"
+               name="InteriorNumber"
+               [(ngModel)]="userData.FiscalData.Address.InteriorNumber"
+               formControlName="InteriorNumber"
+               type="text"
+               class="inp-cotizar"
+               placeholder="No. Int"
+               autocomplete="off"
+        >
+      </div>
+    </div>
+
+    <!-- CODIGO POSTAL -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label" for="PostalCode">* Código postal:</label>
+      <input id="PostalCode"
+             name="PostalCode"
+             [(ngModel)]="userData.FiscalData.Address.PostalCode"
+             formControlName="PostalCode"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Código postal"
+             aria-required="true"
+             autocomplete="off"
+      >
+    </div>
+
+    <!-- COLONIA -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label">* Colonia:</label>
+      <input id="Settlement"
+             name="Settlement"
+             [(ngModel)]="userData.FiscalData.Address.Settlement"
+             formControlName="Settlement"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Colonia"
+             aria-required="true"
+             autocomplete="off"
+      >
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label" for="Township">*Delegación/Municipio:</label>
+      <input id="Township"
+             name="Township"
+             [(ngModel)]="userData.FiscalData.Address.Township"
+             formControlName="Township"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Delegación/Municipio"
+             aria-required="true"
+             autocomplete="off"
+      >
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 m-b-20">
+      <label class="text-label" for="FederalEntityId">*Estado:</label>
+      <select id="FederalEntityId"
+              name="FederalEntityId"
+              [(ngModel)]="userData.FiscalData.Address.FederalEntity.Id"
+              formControlName="FederalEntityId"
+              class="inp-cotizar">
+        <option *ngFor="let fe of listFederalEntities" [ngValue]="fe.Id">{{fe.Name}}</option>
+      </select>
+    </div>
+
+    <div class="col-lg-12">
+      <p class="text-dark text-left">Datos Bancarios</p>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 m-b-20">
+      <label class="text-label" for="BankId">*Banco:</label>
+      <select id="BankId"
+              name="BankId"
+              [(ngModel)]="userData.FiscalData.Card.Bank.Id"
+              formControlName="BankId"
+              class="inp-cotizar">
+        <option *ngFor="let bank of listBanks" [ngValue]="bank.Id">{{bank.Name}}</option>
+      </select>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label" for="Clabe">* Cuenta CLABE:</label>
+      <input id="Clabe"
+             name="Clabe"
+             [(ngModel)]="userData.FiscalData.Card.Clabe"
+             formControlName="Clabe"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Cuenta CLABE"
+             aria-required="true"
+             autocomplete="off"
+      >
+    </div>
+
+
+    <div class="col-lg-12 text-right-content">
+      <a>
+        <button class="btn-cancel" type="button" (click)="resetFormUserFiscalData()">CANCELAR</button>
+      </a>
+      <a>
+        <button class="btn"
+                type="submit"
+                [disabled]="!myProfileFiscalDataForm.valid">
+          GUARDAR
+        </button>
+      </a>
+    </div>
+  </form>
+</div>
+
+<!-- Ventanas Modales -->
+<app-modal-windows-error #modalError [errorMessage]="parentErrorMessage"></app-modal-windows-error>
+<app-modal-windows-success #modalSuccess [successMessage]="parentSuccessMessage"></app-modal-windows-success>
