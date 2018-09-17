@@ -1,0 +1,186 @@
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+  <!-- FORMULARIO DE DATOS PERSONALES -->
+  <form [formGroup]="myProfilePersonalForm"
+        class="js-form"
+        (submit)="submitMyProfilePersonalForm()"
+        novalidate="novalidate"
+  >
+
+    <!-- VALIDACIONES -->
+    <div
+      *ngIf="myProfilePersonalForm.invalid && ( FirstName.touched || LastName.touched ||SecondLastName.touched)"
+      class="col-xs-12 col-sm-12 col-md-12 col-lg-12 m-b-20 danger">
+
+      <ul *ngIf="FirstName.invalid && (FirstName.dirty || FirstName.touched)">
+        <li *ngIf="myProfilePersonalForm.controls['FirstName'].hasError('required')">
+          El <strong>Nombre(s)</strong> es requerido.
+        </li>
+      </ul>
+
+      <ul *ngIf="LastName.invalid && (LastName.dirty || LastName.touched)">
+        <li *ngIf="myProfilePersonalForm.controls['LastName'].hasError('required')">
+          El <strong>Apellido Paterno</strong> es requerido.
+        </li>
+      </ul>
+
+      <ul *ngIf="SecondLastName.invalid && (SecondLastName.dirty || SecondLastName.touched)">
+        <li *ngIf="myProfilePersonalForm.controls['SecondLastName'].hasError('required')">
+          El <strong>Apellido Materno</strong> es requerido.
+        </li>
+      </ul>
+
+    </div>
+
+    <!-- NOMBRE(S)-->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label">*Nombre (s):</label>
+      <input id="FirstName"
+             name="FirstName"
+             [(ngModel)]="userData.FirstName"
+             formControlName="FirstName"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Nombre(s)"
+             aria-required="true"
+      >
+    </div>
+
+    <!-- AP PATERNO -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label">*Apellido Paterno:</label>
+      <input id="LastName"
+             name="LastName"
+             [(ngModel)]="userData.LastName"
+             formControlName="LastName"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Apellido Paterno"
+             aria-required="true"
+      >
+    </div>
+
+    <!-- APELLIDO MATERNO -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label">*Apellido Materno:</label>
+      <input id="SecondLastName"
+             name="SecondLastName"
+             [(ngModel)]="userData.SecondLastName"
+             formControlName="SecondLastName"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Apellido Materno"
+             aria-required="true"
+      >
+    </div>
+
+    <!-- GENERO -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 margin-special">
+      <div class="col-lg-12">
+        <label class="text-label">*Género:</label>
+      </div>
+
+
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-l-0 m-t-20">
+        <label class="container-radio text-label">Hombre
+          <!--
+          <input type="radio" name="radio" (change)="onSelectionChange(entry)">
+          -->
+          <input type="radio" name="radio"
+                 [checked]="userData.Gender === 'M'"
+                 [value]="'M'"
+                 [(ngModel)]="userData.Gender"
+                 [ngModelOptions]="{standalone: true}"
+          >
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-l-0 m-t-20">
+        <label class="container-radio text-label">Mujer
+          <!--
+          <input type="radio" name="radio">
+          -->
+          <input type="radio" name="radio"
+                 [checked]="userData.Gender === 'F'"
+                 [value]="'F'"
+                 [(ngModel)]="userData.Gender"
+                 [ngModelOptions]="{standalone: true}"
+          >
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+    <!-- FINALIZA LO DEL GENERO -->
+
+    <!-- FECHA DE NACIMIENTO -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label">*Fecha de Nacimiento</label>
+      <div class="input-calendar">
+        <input id="TemporalBornDate"
+               name="TemporalBornDateInput"
+               [(ngModel)]="this.userData.BornDate"
+               [ngModelOptions]="{standalone: true}"
+               type="date"
+               class="inp-cotizar"
+               required
+               aria-required="true"
+               (change)="setBornDate($event)">
+      </div>
+    </div>
+    <!-- FECHA DE NACIMIENTO -->
+
+    <!--
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label">*Teléfono:</label>
+      <input type="text" class="inp-cotizar">
+    </div>
+    -->
+
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label">*Correo Electrónico</label>
+      <p class="text-label">{{userData.Email}}</p>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 m-b-20">
+      <label class="text-label">*Código de Anfitrión:</label>
+      <p class="text-label">{{userData.HostKey}}</p>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 m-b-20">
+      <label class="text-label">*Código de Invitado:</label>
+      <input id="GuestKey"
+             name="GuestKey"
+             [(ngModel)]="userData.GuestKey"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Apellido Materno"
+             aria-required="true"
+             [ngModelOptions]="{standalone: true}"
+             [disabled]="userData.GuestKey"
+             [attr.disabled]="userData.GuestKey"
+      >
+    </div>
+
+    <div class="col-lg-12 text-right-content">
+      <a>
+        <button class="btn-cancel" type="button" (click)="resetFormUserPersonalData()">CANCELAR</button>
+      </a>
+      <a>
+        <button class="btn"
+                type="submit"
+                [disabled]="!myProfilePersonalForm.valid">
+          GUARDAR
+        </button>
+      </a>
+    </div>
+  </form>
+</div>
+
+<!-- Ventanas Modales -->
+<app-modal-windows-error #modalError [errorMessage]="parentErrorMessage"></app-modal-windows-error>
+<app-modal-windows-success #modalSuccess [successMessage]="parentSuccessMessage"></app-modal-windows-success>

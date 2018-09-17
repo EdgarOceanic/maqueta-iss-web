@@ -1,0 +1,181 @@
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+  <!-- FORMULARIO DE DIRECCION DEL USUARIO -->
+  <form [formGroup]="myProfileAddressForm"
+        class="js-form"
+        (submit)="submitMyProfileAddressForm()"
+        novalidate="novalidate"
+  >
+
+    <!-- VALIDACIONES -->
+    <div
+      *ngIf="myProfileAddressForm.invalid && ( Street.touched || OutdoorNumber.touched ||PostalCode.touched
+          || Settlement.touched || Township.touched )"
+      class="col-xs-12 col-sm-12 col-md-12 col-lg-12 m-b-20 danger">
+
+      <ul *ngIf="Street.invalid && (Street.dirty || Street.touched)">
+        <li *ngIf="myProfileAddressForm.controls['Street'].hasError('required')">
+          La <strong>Dirección</strong> es requerida.
+        </li>
+      </ul>
+
+      <ul *ngIf="OutdoorNumber.invalid && (OutdoorNumber.dirty || OutdoorNumber.touched)">
+        <li *ngIf="myProfileAddressForm.controls['OutdoorNumber'].hasError('required')">
+          El <strong>Número Exterios</strong> es requerido.
+        </li>
+      </ul>
+
+      <ul *ngIf="PostalCode.invalid && (PostalCode.dirty || PostalCode.touched)">
+        <li *ngIf="myProfileAddressForm.controls['PostalCode'].hasError('required')">
+          El <strong>Código postal</strong> es requerido.
+        </li>
+      </ul>
+
+      <ul *ngIf="Settlement.invalid && (Settlement.dirty || Settlement.touched)">
+        <li *ngIf="myProfileAddressForm.controls['Settlement'].hasError('required')">
+          La <strong>Colonia</strong> es requerida.
+        </li>
+      </ul>
+
+      <ul *ngIf="Township.invalid && (Township.dirty || Township.touched)">
+        <li *ngIf="myProfileAddressForm.controls['Township'].hasError('required')">
+          La <strong>Delegación o Municipio</strong> es requerid@.
+        </li>
+      </ul>
+
+      <ul *ngIf="FederalEntityId.invalid && (FederalEntityId.dirty || FederalEntityId.touched)">
+        <li *ngIf="myProfileAddressForm.controls['FederalEntityId'].hasError('required')">
+          Debes seleccionar una Entidad Federativa.
+        </li>
+      </ul>
+
+    </div>
+    <!-- Finalizan Las VALIDACIONES -->
+
+    <!-- Calle ó Dirección -->
+    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+      <label class="text-label">* Calle:</label>
+      <input id="Street"
+             name="Street"
+             [(ngModel)]="userData.Address.Street"
+             formControlName="Street"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Calle"
+             aria-required="true"
+      >
+    </div>
+
+    <!-- Número Exterior e Interior -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-l-0">
+        <label class="text-label">*No. Ext.</label>
+        <input id="OutdoorNumber"
+               name="OutdoorNumber"
+               [(ngModel)]="userData.Address.OutdoorNumber"
+               formControlName="OutdoorNumber"
+               required
+               type="text"
+               class="inp-cotizar"
+               placeholder="No. Ext"
+               aria-required="true"
+        >
+      </div>
+
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 p-r-0">
+        <label class="text-label">*No. Int.</label>
+        <input id="InteriorNumber"
+               name="InteriorNumber"
+               [(ngModel)]="userData.Address.InteriorNumber"
+               [ngModelOptions]="{standalone: true}"
+               required
+               type="text"
+               class="inp-cotizar"
+               placeholder="No. Int"
+               aria-required="true"
+        >
+      </div>
+
+    </div>
+
+    <!-- Código postal -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label">* Código postal:</label>
+      <input id="PostalCode"
+             name="PostalCode"
+             [(ngModel)]="userData.Address.PostalCode"
+             formControlName="PostalCode"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Código postal"
+             aria-required="true"
+      >
+    </div>
+
+    <!-- Colonia -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+      <label class="text-label">* Colonia:</label>
+      <input id="Settlement"
+             name="Settlement"
+             [(ngModel)]="userData.Address.Settlement"
+             formControlName="Settlement"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Colonia"
+             aria-required="true"
+      >
+    </div>
+
+    <!-- Delegación/Municipio -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 m-b-20">
+      <label class="text-label">*Delegación/Municipio:</label>
+      <input id="Township"
+             name="Township"
+             [(ngModel)]="userData.Address.Township"
+             formControlName="Township"
+             required
+             type="text"
+             class="inp-cotizar"
+             placeholder="Delegación/Municipio"
+             aria-required="true"
+      >
+    </div>
+
+    <!-- Estado -->
+    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-3 m-b-20">
+      <label class="text-label" for="FederalEntityId">*Estado:</label>
+      <select id="FederalEntityId"
+              name="FederalEntityId"
+              [(ngModel)]="userData.Address.FederalEntity.Id"
+              formControlName="FederalEntityId"
+              class="inp-cotizar">
+        <option *ngFor="let fe of listFederalEntities" [ngValue]="fe.Id">{{fe.Name}}</option>
+      </select>
+    </div>
+
+    <!-- SUBMIT -->
+    <div class="col-lg-12 text-right-content">
+      <a>
+        <button class="btn-cancel" type="button" (click)="resetFormUserAddress()">CANCELAR</button>
+      </a>
+      <a>
+        <button class="btn"
+                type="submit"
+                [disabled]="!myProfileAddressForm.valid">
+          GUARDAR
+        </button>
+      </a>
+    </div>
+
+  </form>
+
+</div>
+
+<!-- Ventanas Modales -->
+<app-modal-windows-error #modalError [errorMessage]="parentErrorMessage"></app-modal-windows-error>
+<app-modal-windows-success #modalSuccess [successMessage]="parentSuccessMessage"></app-modal-windows-success>
+

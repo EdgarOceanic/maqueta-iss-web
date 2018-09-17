@@ -185,7 +185,7 @@ h4,
   letter-spacing: -0.05em;
   color: #fff;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
   text-align: left;
 }
 h5,
@@ -453,7 +453,7 @@ a.text-link-login{
 }
 
 h3 a{
-  color: #063d66;
+  color: #FFF;
 }
 h3 a:hover{
   text-decoration: none;
@@ -872,6 +872,7 @@ select.inp-cotizar{
   -webkit-transition: all .15s;
        -o-transition: all .15s;
           transition: all .15s;
+  outline: 0px;
 }
 
 input.inp-log[type='text'],
@@ -901,7 +902,8 @@ select.inp-log{
           transition: all .15s;
   border-right: none;
   border-left: none;
-  border-top: none;  
+  border-top: none; 
+  outline: 0px; 
 }
 input.inp-cotizar-calendar{
   display: inline-block;
@@ -1072,7 +1074,7 @@ textarea:focus{
   font-size: 1rem;
   display: inline-block;
   border: 1px solid #fcc33c;
-  border-radius: 30px;
+  border-radius: 30px !important;
   padding: .6em 2em;
   background-color: #FCC33C;
   text-decoration: none;
@@ -1456,12 +1458,12 @@ textarea:focus{
   color: #063d66;
 }
 .text-green{
-  color: #8cc63f;
+  color: #006837;
   font-size: 10px;
   font-family: 'montserrat';
 }
 .text-green-table{
-  color: #8cc63f;
+  color: #006837;
   font-family: 'montserrat';
   font-weight: 700;
 
@@ -1874,7 +1876,6 @@ a.brand:focus{
 .menu-footer .copy{
   opacity: 0;
   display: block;
-  margin-top: 3.2rem;
   color: #fff;
   line-height: 1.71rem;
   -webkit-transform: translateY(2rem);
@@ -2401,9 +2402,16 @@ a.active-profile{
 }
 .bg-modal-white{
   background-color: #fff;
-  padding: 10px 20px 40px 20px;
+  padding: 10px 20px 10px 20px;
   text-align: left !important;
 }
+
+.bg-modal-white-share-social-networks{
+  background-color: #fff;
+  padding: 10px 20px 5px 20px !important;
+  text-align: left !important;
+}
+
 .modal-dialog{
   width: 800px;
 }
