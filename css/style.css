@@ -144,7 +144,7 @@ body{
 }
 
 h1,
-.h1{ 
+.h1{
   font-weight: 900;
   font-size: 2rem;
   line-height: 1.2;
@@ -156,7 +156,7 @@ h1,
 }
 
 h2,
-.h2{ 
+.h2{
   font-weight: 800 !important;
   font-size: 2rem !important;
   line-height: 1.166 !important;
@@ -280,10 +280,10 @@ a:focus{
   color: #A2D8F4;
 }
 .bg-contact{
-  background-color: #272727 !important; 
+  background-color: #272727 !important;
 }
 .bg-enterprice{
-  background-color: #3496E0 !important; 
+  background-color: #3496E0 !important;
   padding: 10rem 0rem;
 }
 .img-enterprice{
@@ -514,7 +514,7 @@ h3 a:hover{
   z-index: 100;
 }
 .element-menu{
-  margin-top:15px; 
+  margin-top:15px;
 }
 .btn-aling{
   right: 0% !important;
@@ -749,7 +749,7 @@ td{
 }
 .tabla-responsiva-dash{
     width: 100%;
-    overflow-x: auto; 
+    overflow-x: auto;
 }
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
     border: 0px !important;
@@ -902,8 +902,8 @@ select.inp-log{
           transition: all .15s;
   border-right: none;
   border-left: none;
-  border-top: none; 
-  outline: 0px; 
+  border-top: none;
+  outline: 0px;
 }
 input.inp-cotizar-calendar{
   display: inline-block;
@@ -996,7 +996,7 @@ background-size: 24px;
 appearance: none;
 }
 select::-ms-expand {
-display: none; 
+display: none;
 }
 .input-calendar{
   display: flex;
@@ -1317,7 +1317,7 @@ textarea:focus{
   position: fixed;
   overflow: hidden;
   z-index: 10000;
-  left: 0; 
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1364,10 +1364,10 @@ textarea:focus{
 }
 
 @keyframes sk-bounce {
-  0%, 100% { 
+  0%, 100% {
     transform: scale(0.0);
     -webkit-transform: scale(0.0);
-  } 50% { 
+  } 50% {
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
@@ -1379,7 +1379,7 @@ textarea:focus{
   position: fixed;
   overflow: hidden;
   z-index: 10000;
-  left: 0; 
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -1563,7 +1563,7 @@ textarea:focus{
 -------------------------------------------------------------------------------*/
 
 
-.navbar{ 
+.navbar{
   position: absolute;
   z-index: 10;
   left:0;
@@ -1621,7 +1621,7 @@ a.brand:focus{
   color: #7e7e7e;
   font-size: 0.857rem;
   font-weight: 300;
-  margin-top: -0.3rem; 
+  margin-top: -0.3rem;
 }
 
 .navbar-toggle{
@@ -2511,10 +2511,10 @@ a.active-profile{
 }
 
 @keyframes sk-bounce {
-  0%, 100% { 
+  0%, 100% {
     transform: scale(0.0);
     -webkit-transform: scale(0.0);
-  } 50% { 
+  } 50% {
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
@@ -3323,4 +3323,91 @@ select[_ngcontent-mjc-10]{
     color:#063D66 !important;
 }
 
+/* ESTILOS HOY NO CIRCULA */
+.subHeadingNDD {
+  font-size: 1.125rem !important;
+  font-weight: 800 !important;
+  color: #063d66 !important;
+  text-align: center;
+}
+.info-NoDriveDay > tbody > tr > td {
+  font-size: 0.875rem !important;
+  letter-spacing: 0;
+  line-height: 1.25rem;
+}
+table .mon-1 {
+  background: #FCCB4A;
+  color: #111;
+}
+table .tue-1 {
+  background: #FC87C9;
+  color: #111;
+}
+table .wed-1 {
+  background: #FF4040;
+  color: #000;
+}
+table .thu-1 {
+  background: #01AE42;
+  color: #111;
+}
+table .fri-1 {
+  background: #69C2EA;
+  color: #111;
+}
+table .sat-1 {
+  background: #F2F2F2;
+  color: #111;
+  min-width: 300px;
+}
+.hr-gray {
+  border-top: 1px solid #CCCCCC;
+  width: 60%;
+}
+.font-weight-bold {
+  font-weight: 700 !important;
+}
+.alert {
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-radius: .25rem;
+  text-align: left;
+}
+.alert-primary {
+  color: #004085;
+  background-color: #cce5ff;
+  border-color: #b8daff;
+}
+/* ESTILOS EMISIÓN */
+.icon-box img {
+  display: block;
+  margin:auto;
+  width: 95px;
+  height: 95px;
+  padding: 20px;
+}
 
+.alert-poliza {
+  font-size: 2rem;
+}
+
+.alert-success {
+  color: #155724;
+}
+
+.display-recompensas {
+  font-family: 'montserratbold';
+  font-size: 1.5rem !important;
+  color: #004C8C;
+}
+.emision-final-recompensas {
+  display: inline-block;
+  vertical-align: top;
+
+}
